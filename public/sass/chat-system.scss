@@ -1,0 +1,80 @@
+@import "partials/colors";
+
+body {
+    color: $txt;
+
+    aside {
+        width: 10%;
+        background-color: $hdr;
+
+        nav {
+            padding: 1rem;
+
+            ul {
+                padding: 0;
+                list-style: none;
+                display: inline-flex;
+                flex-direction: column;
+                gap: 10px;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    main {
+        width: 90%;
+        background-color: $bg;
+        display: flex;
+        flex-direction: column;
+
+        header {
+            flex-basis: 20%;
+            padding: 1rem 0 0 1rem;
+
+            h1 {
+                font-family: 'Montserrat', sans-serif;
+                margin: 0;
+            }
+        }
+
+        .container {
+
+            flex-basis: 70%;
+            display: inline-flex;
+
+            .sidenav-container {
+                width: 20%;
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    display: inline-flex;
+                    flex-direction: column;
+
+                    li {
+                        background-color: $msg;
+                        border-bottom: 0.01rem solid;
+                        padding: 1rem 2rem;
+
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+            .msg-container {
+                width: 80%;
+                height: 500px;
+            }
+        }
+
+        footer {
+            color: gray;
+            padding: 0 0 0.5rem 0.5rem;
+        }
+    }
+}
