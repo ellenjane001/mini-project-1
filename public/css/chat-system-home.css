@@ -1,0 +1,11 @@
+html body main {
+  width: 100%;
+}
+html body main .container .msg-container {
+  margin-right: 50px;
+  width: 90%;
+  height: 700px;
+  background-color: rgb(240, 247, 238);
+  border: solid 0.01px rgb(247, 178, 189);
+  border-radius: 20px;
+}/*# sourceMappingURL=chat-system-home.css.map */

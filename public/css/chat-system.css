@@ -1,12 +1,25 @@
 body {
-  color: #42C2FF;
+  color: rgb(247, 178, 189);
 }
 body aside {
-  width: 10%;
-  background-color: #85F4FF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 8%;
+  background-color: rgb(121, 128, 134);
+}
+body aside span {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 70px;
+  color: rgb(4, 15, 15);
 }
 body aside nav {
-  padding: 1rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 body aside nav ul {
   padding: 0;
@@ -14,19 +27,28 @@ body aside nav ul {
   display: inline-flex;
   flex-direction: column;
   gap: 10px;
+  align-items: center;
 }
-body aside nav ul a {
+body aside nav ul li {
+  padding: 1rem;
+}
+body aside nav ul li a {
   text-decoration: none;
+  color: rgb(4, 15, 15);
+  text-transform: uppercase;
+}
+body aside nav ul li a i {
+  font-size: 25px;
 }
 body main {
-  width: 90%;
-  background-color: #EFFFFD;
+  width: 92%;
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
 body main header {
   flex-basis: 20%;
-  padding: 1rem 0 0 1rem;
+  padding: 1rem 0 1rem 1rem;
 }
 body main header h1 {
   font-family: "Montserrat", sans-serif;
@@ -37,27 +59,33 @@ body main .container {
   display: inline-flex;
 }
 body main .container .sidenav-container {
-  width: 20%;
+  width: 10%;
 }
 body main .container .sidenav-container ul {
   list-style: none;
   padding: 0;
   display: inline-flex;
   flex-direction: column;
+  gap: 10px;
 }
 body main .container .sidenav-container ul li {
-  background-color: #B8FFF9;
-  border-bottom: 0.01rem solid;
+  width: 100%;
   padding: 1rem 2rem;
+  background-color: rgb(247, 178, 189);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+body main .container .sidenav-container ul li:hover {
+  background-color: rgb(106, 141, 146);
+  transform: scale(1.1);
 }
 body main .container .sidenav-container ul li a {
+  display: inline-flex;
+  gap: 8px;
   text-decoration: none;
-}
-body main .container .msg-container {
-  width: 80%;
-  height: 500px;
+  color: rgb(121, 128, 134);
 }
 body main footer {
-  color: gray;
+  color: rgb(4, 15, 15);
   padding: 0 0 0.5rem 0.5rem;
 }/*# sourceMappingURL=chat-system.css.map */

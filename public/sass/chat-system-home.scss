@@ -1,0 +1,21 @@
+@import 'partials/colors';
+
+html {
+    body {
+        main {
+            width: 100%;
+
+            .container {
+                .msg-container {
+                    margin-right: 50px;
+                    width: 90%;
+                    height: 700px;
+                    background-color: $color4;
+                    border: solid 0.01px $color3;
+                    border-radius: 20px;
+                }
+            }
+
+        }
+    }
+}
