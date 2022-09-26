@@ -13,38 +13,37 @@ html body header {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 600px) {
+  html body header {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+  }
+  html body header .container-fluid {
+    flex-wrap: nowrap !important;
+    flex-direction: row-reverse !important;
+    gap: 10px;
+  }
+  html body header ul {
+    flex-direction: row !important;
+    gap: 10px !important;
+  }
+}
 html body main div.container {
   display: flex;
   flex-direction: row-reverse;
-  height: 600px;
+  height: 850px;
   position: relative;
   margin: 0;
   padding: 0;
   max-width: 100%;
 }
-html body main div.container nav {
-  width: 20%;
-}
-html body main div.container nav ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-  height: 100%;
-  margin-bottom: 0;
-}
-html body main div.container nav ul li a {
-  text-decoration: none;
-  color: #050304;
-  font-weight: 600;
-}
-html body main div.container nav ul li a:hover {
-  text-decoration: underline;
-}
 html body main div.container div.hero {
+  background-position: center;
+  box-shadow: inset 0px 0px 0 2000px rgba(0, 0, 30, 0.5);
+  align-items: center;
   position: relative;
-  width: 80%;
+  width: 100%;
   padding: 20px 30px;
   display: flex;
   justify-content: center;
@@ -56,18 +55,26 @@ html body main div.container div.hero h1 {
   font-family: "Playfair Display", serif;
   position: absolute;
   word-wrap: break-word;
-  width: 30%;
+  width: 40%;
   top: 1%;
-  font-size: 67px;
+  font-size: 90px;
   left: 6%;
   background: -webkit-linear-gradient(#FAEBD9, #D8D9D7);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width: 600px) {
+  html body main div.container div.hero h1 {
+    width: 90%;
+  }
+}
 html body main div.container div.hero button {
+  padding: 10px 50px;
+  border: none;
   position: absolute;
-  top: 50%;
+  border-radius: 30px;
+  top: 35%;
   left: 7%;
 }
 html body main div.container-2 {
