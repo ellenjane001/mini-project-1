@@ -38,6 +38,11 @@ html body main div.container {
   padding: 0;
   max-width: 100%;
 }
+@media screen and (max-width: 600px) {
+  html body main div.container {
+    height: 220px;
+  }
+}
 html body main div.container div.hero {
   background-position: center;
   box-shadow: inset 0px 0px 0 2000px rgba(0, 0, 30, 0.5);
@@ -67,6 +72,7 @@ html body main div.container div.hero h1 {
 @media screen and (max-width: 600px) {
   html body main div.container div.hero h1 {
     width: 90%;
+    font-size: 50px;
   }
 }
 html body main div.container div.hero button {
@@ -77,6 +83,26 @@ html body main div.container div.hero button {
   top: 35%;
   left: 7%;
 }
+@media screen and (max-width: 600px) {
+  html body main div.container div.hero button {
+    top: 90%;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  html body main div.container div.hero button {
+    top: 90%;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  html body main div.container div.hero button {
+    top: 60%;
+  }
+}
+@media screen and (max-width: 1700px) and (min-width: 1200px) {
+  html body main div.container div.hero button {
+    top: 50%;
+  }
+}
 html body main div.container-2 {
   margin-top: 20px;
   height: 300px;
@@ -85,6 +111,12 @@ html body main div.container-2 {
   align-items: center;
   width: 100%;
   gap: 40px;
+}
+@media screen and (max-width: 600px) {
+  html body main div.container-2 {
+    flex-direction: column;
+    height: 100%;
+  }
 }
 html body main div.container-2 h2 {
   font-family: "Meera Inimai", sans-serif;
@@ -97,6 +129,11 @@ html body main div.container-2 div.img-wrapper {
   align-items: flex-end;
   justify-content: flex-start;
   padding-left: 20px;
+}
+@media screen and (max-width: 600px) {
+  html body main div.container-2 div.img-wrapper {
+    width: 90%;
+  }
 }
 html body main div.container-2 div.img-wrapper div.box {
   height: 170px;
@@ -133,9 +170,19 @@ html body main div.container-3 div.container-3-bottom {
   gap: 10px;
   align-items: center;
 }
+@media screen and (max-width: 600px) {
+  html body main div.container-3 div.container-3-bottom {
+    flex-direction: column;
+  }
+}
 html body main div.container-3 div.container-3-bottom div.c-3-b-left {
   width: 50%;
   padding: 0 100px;
+}
+@media screen and (max-width: 600px) {
+  html body main div.container-3 div.container-3-bottom div.c-3-b-left {
+    padding: 0;
+  }
 }
 html body main div.container-3 div.container-3-bottom div.c-3-b-left h1 {
   font-family: "Meera Inimai", sans-serif;
@@ -145,6 +192,11 @@ html body main div.container-3 div.container-3-bottom div.c-3-b-left h1 {
 html body main div.container-3 div.container-3-bottom div.c-3-b-left ul li {
   border-bottom: solid 0.01px #9A936E;
   width: 50%;
+}
+@media screen and (max-width: 600px) {
+  html body main div.container-3 div.container-3-bottom div.c-3-b-left ul li {
+    width: 100%;
+  }
 }
 html body main div.container-3 div.container-3-bottom div.c-3-b-left ul li h3 {
   font-family: "Meera Inimai", sans-serif;
@@ -169,6 +221,11 @@ html body main div.container-4 > section {
   padding-left: 10px;
   border-left: solid 2px #D8D9D7;
 }
+@media screen and (max-width: 600px) {
+  html body main div.container-4 > section {
+    margin-left: 0;
+  }
+}
 html body main div.container-4 img {
   width: 80%;
   height: 80%;
@@ -178,6 +235,11 @@ html body main div.container-5 {
   display: flex;
   gap: 100px;
   justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  html body main div.container-5 {
+    flex-direction: column;
+  }
 }
 html body main div.container-5 > div.c-5-right {
   display: flex;
