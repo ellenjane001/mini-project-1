@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+body main div.container {
+  width: 100%;
+  flex-direction: column !important;
+  text-align: center;
+}
+body main div.container .top {
+  padding: 20px 30px;
+}
+body main div.container .top h1 {
+  font-family: "Comfortaa", cursive;
+}
+body main div.container .bottom {
+  width: 100%;
+  text-align: center;
+}
+body main div.container .bottom div.img-wrapper {
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  border-radius: 50%;
+  border: solid 0.01px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=bs-aboutus.css.map */
