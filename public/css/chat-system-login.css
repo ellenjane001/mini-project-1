@@ -2,15 +2,25 @@
 html body {
   width: 100%;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(240, 247, 238);
+  align-items: center;
+  height: 80vh;
 }
 html body main {
-  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 1px 4px 1px rgb(176, 174, 176);
+  padding: 1rem;
+  width: 50%;
+  border-radius: 20px;
 }
 html body main h1 {
   text-align: center;
   color: rgb(4, 15, 15);
+  margin: 10px;
 }
 html body main form {
   display: inline-flex;
@@ -20,11 +30,8 @@ html body main form {
 }
 html body main form input {
   text-align: center;
-  width: 50%;
-  border-radius: 3px;
   height: 25px;
-  border: none;
-  box-shadow: 0px 1px 4px 1px rgb(176, 174, 176);
+  border: solid 0.01px;
   font-family: "Lato", sans-serif;
   color: rgb(106, 141, 146);
 }
@@ -34,10 +41,10 @@ html body main form input:focus {
 html body main form button {
   border: solid 0.01rem rgb(4, 15, 15);
   color: rgb(4, 15, 15);
-  width: 35%;
   height: 30px;
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
   background-color: rgb(247, 178, 189);
+  border-radius: 3px;
 }/*# sourceMappingURL=chat-system-login.css.map */
