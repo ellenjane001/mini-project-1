@@ -165,7 +165,7 @@ html body main div.container-2 div.some-text {
 }
 @media (min-width: 600px) {
   html body main div.container-2 div.some-text {
-    width: 30%;
+    width: 50%;
   }
 }
 html body main div.container-3 {
@@ -207,11 +207,11 @@ html body main div.container-3 div.container-3-bottom div.c-3-b-left h1 {
 }
 html body main div.container-3 div.container-3-bottom div.c-3-b-left ul li {
   border-bottom: solid 0.01px #9A936E;
-  width: 50%;
+  width: 100%;
 }
 @media (min-width: 600px) {
   html body main div.container-3 div.container-3-bottom div.c-3-b-left ul li {
-    width: 100%;
+    width: 50%;
   }
 }
 html body main div.container-3 div.container-3-bottom div.c-3-b-left ul li h3 {
