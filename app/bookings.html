@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habitat Finder - Home</title>
+    <title>Habitat Finder - Bookings</title>
     <link rel="stylesheet" href="../public/css/bs1-global.css">
     <link rel="stylesheet" href="../public/css/bs1-home.css">
     <!-- CSS only -->
@@ -53,10 +53,10 @@
                             <a class="nav-link" href="./rooms.html">Rooms</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./bookings.html">Bookings</a>
+                            <a class="nav-link active" href="./bookings.html">Bookings</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./contact-us.html">Contact</a>
+                            <a class="nav-link" href="./contact-us.html">Contact</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./about-us.html">About us</a>
@@ -69,7 +69,31 @@
                 </div>
             </div>
         </nav>
+
         <!-- template stops here -->
+
+
+        <div class="container-fluid">
+            <form class="d-flex flex-column container-fluid border border-light p-2">
+                <select class="form-select my-1" name="accommodation" id="accommodation">
+                    <option value="">Hotel</option>
+                    <option value="">Resort</option>
+                </select>
+                <input class="form-control my-1" type="search" name="destination" id="destination"
+                    placeholder="Input Destination here">
+                <div class="date-wrapper my-1 d-flex align-items-center justify-content-center">
+                    <input class="form-control" type="date" name="date-from" id="date-from">
+                    <input class="form-control" type="date" name="date-to" id="date-to">
+                </div>
+                <select class="form-select my-1" name="persons" id="persons">
+                    <option value="">1 Adult</option>
+                    <option value="">1 Adult</option>
+                    <option value="">1 Adult</option>
+                </select>
+                <button class="btn btn-primary">Search</button>
+            </form>
+
+        </div>
     </main>
 </body>
 
