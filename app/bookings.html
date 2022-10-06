@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habitat Finder - Bookings</title>
     <link rel="stylesheet" href="../public/css/bs1-global.css">
-    <link rel="stylesheet" href="../public/css/bs1-home.css">
+    <link rel="stylesheet" href="../public/css/bs1-bookings.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
         defer>
-        </script>
+    </script>
     <script src="https://kit.fontawesome.com/b140af86b3.js" crossorigin="anonymous" defer></script>
 </head>
 
@@ -34,7 +34,6 @@
                 </h6>
             </div>
         </div>
-
     </header>
     <main>
         <nav class="navbar navbar-expand-lg">
@@ -53,7 +52,7 @@
                             <a class="nav-link" href="./rooms.html">Rooms</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./bookings.html">Bookings</a>
+                            <a class="nav-link active" href="./bookings.html">Booking</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./contact-us.html">Contact</a>
@@ -64,37 +63,119 @@
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
                     </form>
                 </div>
             </div>
         </nav>
-
         <!-- template stops here -->
-
-
-        <div class="container-fluid">
-            <form class="d-flex flex-column container-fluid border border-light p-2">
-                <select class="form-select my-1" name="accommodation" id="accommodation">
-                    <option value="">Hotel</option>
-                    <option value="">Resort</option>
-                </select>
-                <input class="form-control my-1" type="search" name="destination" id="destination"
-                    placeholder="Input Destination here">
-                <div class="date-wrapper my-1 d-flex align-items-center justify-content-center">
-                    <input class="form-control" type="date" name="date-from" id="date-from">
-                    <input class="form-control" type="date" name="date-to" id="date-to">
+        <div class="container-fluid d-flex justify-content-center">
+            <form class="d-flex flex-column border border-light p-2 m-3 bg-light">
+                <div class="form-floating">
+                    <input class="form-control my-1" type="search" name="destination" id="destination">
+                    <label for="destination">Destination</label>
                 </div>
-                <select class="form-select my-1" name="persons" id="persons">
-                    <option value="">1 Adult</option>
-                    <option value="">1 Adult</option>
-                    <option value="">1 Adult</option>
-                </select>
-                <button class="btn btn-primary">Search</button>
+                <div class="destination-wrapper gap-2 d-flex">
+                    <div class="form-floating">
+                        <select class="form-select my-1" name="accommodation" id="accommodation">
+                            <option value="">Hotel</option>
+                            <option value="">Resort</option>
+                        </select>
+                        <label for="accommodation">Accomodation</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="number" class="form-control my-1" name="person1" id="person1">
+                        <label for="person1">No. of Individuals</label>
+                    </div>
+                </div>
+                <div class="date-wrapper my-1 d-flex align-items-center justify-content-center gap-2">
+                    <div class="form-floating">
+                        <input class="form-control" type="date" name="date-from" id="date-from">
+                        <label for="date-from">From</label>
+                    </div>
+                    <div class="form-floating">
+                        <input class="form-control" type="date" name="date-to" id="date-to" placeholder="date to">
+                        <label for="date-to">To</label>
+                    </div>
+                </div>
+                <button class="btn btn-primary my-1">Search</button>
             </form>
-
+        </div>
+        <div class="container-fluid text-center py-3">
+            <h2>Search suggestions</h2>
+        </div>
+        <div class="container-fluid d-flex justify-content-center gap-3 py-3">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel 1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel 2</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1568084680786-a84f91d1153c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel 3</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Resort 1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+    <footer class="d-flex container-fluid border-top p-3 flex-column justify-content-center align-items-center">
+       
+        <div class="icons d-flex container-fluid justify-content-center gap-2 p-3">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+        <div class="text-muted">
+            <span>&#169; Copyright. All Rights Reserved</span>
+        </div>
+    </footer>
 </body>
 
 </html>

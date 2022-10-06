@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Andika&family=Lato:ital,wght@1,900&family=Roboto+Slab:wght@300&display=swap");
+html body main nav + div div.right {
+  width: 50%;
+  height: auto;
+  background: url("https://images.unsplash.com/photo-1555392504-896a367196e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+  background-size: cover;
+}
+html body main nav + div div.right h1 {
+  font-family: "Lato", sans-serif;
+  color: #FFEDDB;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #BF9270;
+}
+html body main nav + div form {
+  width: 50%;
+}/*# sourceMappingURL=bs1-contact.css.map */
