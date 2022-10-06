@@ -25,6 +25,9 @@ html body header .c-wrapper {
     flex-direction: row;
   }
 }
+html body .card > img {
+  height: 200px !important;
+}
 html body footer {
   background-color: #1E212D;
   color: #FAF3E0;
