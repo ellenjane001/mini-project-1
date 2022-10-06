@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Andika&family=Lato:ital,wght@1,900&family=Roboto+Slab:wght@300&display=swap");
 html body main div.carousel-wrapper h1 {
   font-family: "Lato", sans-serif;
-  color: #FFEDDB;
+  color: #FAF3E0;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #BF9270;
+  -webkit-text-stroke-color: #B68973;
 }
 html body main div.carousel-wrapper .overlay {
   position: absolute;

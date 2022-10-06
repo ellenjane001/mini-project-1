@@ -4,22 +4,37 @@ html {
     body {
         main {
             nav+div {
+                &>div {
+                    flex-direction: column;
+                }
+
+                @media (min-width:600px) {
+                    &>div {
+                        flex-direction: row;
+                    }
+                }
+
                 div.right {
-                    width: 50%;
                     height: auto;
                     background: url('https://images.unsplash.com/photo-1555392504-896a367196e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
                     background-size: cover;
 
+                    @media (min-width:600px) {
+                        width: 50%;
+                    }
+
                     h1 {
                         font-family: 'Lato', sans-serif;
-                        color: #FFEDDB;
+                        color: #FAF3E0;
                         -webkit-text-stroke-width: 1px;
-                        -webkit-text-stroke-color: #BF9270;
+                        -webkit-text-stroke-color: #B68973;
                     }
                 }
 
                 form {
-                    width: 50%;
+                    @media (min-width:600px) {
+                        width: 50%;
+                    }
                 }
             }
         }

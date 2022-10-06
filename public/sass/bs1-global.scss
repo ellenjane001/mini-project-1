@@ -6,6 +6,7 @@ html {
 
         header {
             flex-direction: column;
+            background-color: #FAF3E0;
 
             @media (min-width:600px) {
                 flex-direction: row;
@@ -25,6 +26,18 @@ html {
                     flex-direction: row;
                 }
             }
+        }
+
+        // main {
+
+        //     nav {
+        //         background-color: #FAF3E0;
+        //     }
+        // }
+
+        footer {
+            background-color: #1E212D;
+            color: #FAF3E0;
         }
     }
 }

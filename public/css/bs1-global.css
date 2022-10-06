@@ -4,6 +4,7 @@ html body {
 }
 html body header {
   flex-direction: column;
+  background-color: #FAF3E0;
 }
 @media (min-width: 600px) {
   html body header {
@@ -23,4 +24,8 @@ html body header .c-wrapper {
   html body header .c-wrapper {
     flex-direction: row;
   }
+}
+html body footer {
+  background-color: #1E212D;
+  color: #FAF3E0;
 }/*# sourceMappingURL=bs1-global.css.map */
