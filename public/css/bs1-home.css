@@ -1,9 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Andika&family=Lato:ital,wght@1,900&family=Roboto+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Inter&family=Shrikhand&display=swap");
+html body main iframe {
+  width: 300px;
+}
+@media (min-width: 600px) {
+  html body main iframe {
+    width: 450px;
+  }
+}
 html body main div.carousel-wrapper h1 {
-  font-family: "Lato", sans-serif;
+  font-family: "Shrikhand", cursive;
   color: #FAF3E0;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #B68973;
+  font-size: 35px;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  html body main div.carousel-wrapper h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+@media (min-width: 1100px) {
+  html body main div.carousel-wrapper h1 {
+    font-size: 80px;
+    text-align: center;
+  }
 }
 html body main div.carousel-wrapper .overlay {
   position: absolute;

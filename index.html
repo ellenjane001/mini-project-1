@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +16,6 @@
         defer></script>
     <script src="https://kit.fontawesome.com/b140af86b3.js" crossorigin="anonymous" defer></script>
 </head>
-
 <body>
     <header class="d-flex justify-content-between px-3 align-content-center">
         <img src="https://api.logo.com/api/v2/images?format=webp&logo=logo_9c8e936e-16fb-477f-ac78-2e18cc137548&width=2000&quality=100&background=transparent&fit=contain&u=1664523436"
@@ -47,7 +45,6 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="./app/bookings.html">Book</a>
                         </li>
@@ -99,11 +96,32 @@
             </div>
             <div class="position-absolute translate-middle-x d-flex flex-column align-items-center">
                 <h1 class="display-2">Find Cheap Hotel and Resorts</h1>
-                <button class="btn btn-outline-light btn-lg">Book Now!</button>
+                <form>
+                    <button class="btn btn-outline-light btn-lg" formaction="./app/bookings.html">Book Now!</button>
+                </form>
             </div>
         </div>
-
-        <div class="container-fluid mt-30">
+        <div class="container-fluid text-center border-bottom my-3 py-3">
+            <div class="row align-items-center">
+                <section class="col p-2">
+                    <h1 class="mx-3">Stay Longer, Save More</h1>
+                    <h6 class="text-muted mx-3">
+                        Save 50% when booking a stay for more than a week *
+                    </h6>
+                </section>
+                <section class="col p-2">
+                    <h1 class="mx-3">Book in Advance</h1>
+                    <h6 class="text-muted mx-3">Get 20% Discount *</h6>
+                </section>
+                <section class="col">
+                    <ul class="list-unstyled">
+                        <li><i>* terms and conditions apply</i></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <div class="container-fluid mt-30 text-center">
+            <h1>We also offer venues for events nationwide!</h1>
             <div class="row">
                 <div class="col p-3 d-flex justify-content-center">
                     <div class="card" style="width: 18rem;">
@@ -111,9 +129,10 @@
                             class="card-img-top" alt="...">
                         <div class="card-body">
                             <h6>Wedding Events</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <button class="btn btn-light">Book
+                            <p class="card-text">
+                                Enjoy a grand and luxurious entourage, affordable wedding packages are available!
+                            </p>
+                            <button class="btn btn-outline-primary">Book
                                 Now</button>
                         </div>
                     </div>
@@ -124,9 +143,8 @@
                             class="card-img-top" alt="...">
                         <div class="card-body">
                             <h6>Outdoor Activities</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <button class="btn btn-light">Book
+                            <p class="card-text">Reserve a pool area for a private event!</p>
+                            <button class="btn btn-outline-primary">Book
                                 Now</button>
                         </div>
                     </div>
@@ -137,29 +155,17 @@
                             class="card-img-top" alt="...">
                         <div class="card-body">
                             <h6>Beach</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <button class="btn btn-light">Book
+                            <p class="card-text">Enjoy the solitude by renting a private beach!</p>
+                            <button class="btn btn-outline-primary">Book
                                 Now</button>
                         </div>
                     </div>
                 </div>
-                <div class="col d-flex flex-column justify-content-end py-3">
-                    <section>
-                        <h1>Stay Longer, Save More</h1>
-                        <h6 class="text-muted">
-                            Save 50% when booking a stay for more than a week *
-                        </h6>
-                    </section>
-                    <section>
-                        <h1>Book in Advance</h1>
-                        <h6 class="text-muted">Get 20% Discount *</h6>
-                    </section>
-                    <section>
-                        <ul class="list-unstyled">
-                            <li><i>* terms and conditions apply</i></li>
-                        </ul>
-                    </section>
+                <div class="col d-flex flex-column align-items-center py-3">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d8004689.66088897!2d117.62139093686616!3d11.584807061170672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shotels%20in%20Philippines!5e0!3m2!1sen!2sph!4v1665058377560!5m2!1sen!2sph"
+                        width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <section>
                         <h4>Sign up to our newsletter</h4>
                         <form class="d-flex gap-2">
@@ -169,13 +175,6 @@
                     </section>
                 </div>
             </div>
-
-        </div>
-        <div class="container-fluid text-center">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d8004689.66088897!2d117.62139093686616!3d11.584807061170672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shotels%20in%20Philippines!5e0!3m2!1sen!2sph!4v1665058377560!5m2!1sen!2sph"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
     <footer class="d-flex container-fluid border-top p-3 flex-column justify-content-center align-items-center">
@@ -189,5 +188,4 @@
         </div>
     </footer>
 </body>
-
 </html>

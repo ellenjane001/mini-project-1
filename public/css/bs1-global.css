@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Andika&family=Lato:ital,wght@1,900&family=Roboto+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Inter&family=Shrikhand&display=swap");
 html body {
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 html body header {
   flex-direction: column;
@@ -24,6 +25,10 @@ html body header .c-wrapper {
   html body header .c-wrapper {
     flex-direction: row;
   }
+}
+html body main h1 {
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
 }
 html body .card > img {
   height: 200px !important;
