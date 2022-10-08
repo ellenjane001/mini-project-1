@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../public/assets/favicon//favicon-16x16.png">
     <link rel="manifest" href="../public/assets/favicon/site.webmanifest">
     <link rel="stylesheet" href="../public/css/bs1-global.css">
-    <link rel="stylesheet" href="../public/css/bs1-home.css">
+    <link rel="stylesheet" href="../public/css/bs1-search-res.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -19,6 +19,7 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
         defer>
         </script>
+    <!-- font-awesome -->
     <script src="https://kit.fontawesome.com/b140af86b3.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
@@ -72,7 +73,7 @@
         </nav>
         <!-- template stops here -->
         <!-- breadcrumb -->
-        <div class="container-fluid">
+        <div class="container-fluid px-5">
             <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
                 aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -83,6 +84,59 @@
             </nav>
         </div>
         <!-- breadcrumb -->
+        <!-- results and filter - wrapper -->
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col-3">
+                    <!-- filter -->
+
+                </div>
+                <div class="col-9 results">
+                    <!-- results -->
+                    <section class="border">
+                        <img src="https://images.unsplash.com/photo-1539284811665-fd56f8b1b47c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            alt="result-1">
+                        <span class="source">
+                            Photo by <a
+                                href="https://unsplash.com/@danielcgold?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dan
+                                Gold</a> on <a
+                                href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        </span>
+                    </section>
+                    <section class="border">
+                        <img src="https://images.unsplash.com/photo-1609517448522-2e108986b505?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                            alt="result-2">
+                        <span class="source">
+                            Photo by <a
+                                href="https://unsplash.com/@chessacr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christian
+                                Hess Araya</a> on <a
+                                href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        </span>
+                    </section>
+                    <section class="border">
+                        <img src="https://images.unsplash.com/photo-1506399790179-ddf35cdb2675?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80    "
+                            alt="result-3">
+                        <span class="source">
+                            Photo by <a
+                                href="https://unsplash.com/@thekokatron?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ko
+                                Ko
+                                Win</a> on <a
+                                href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        </span>
+                    </section>
+                    <section class="border">
+                        <img src="https://images.unsplash.com/photo-1569369926169-9ee7fb80adeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1163&q=80"
+                            alt="result-4">
+                        <span class="source">
+                            Photo by <a
+                                href="https://unsplash.com/@simplysuzy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Suzy
+                                Brooks</a> on <a
+                                href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        </span>
+                    </section>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- footer template -->
     <footer class="d-flex container-fluid border-top p-3 flex-column justify-content-center align-items-center">

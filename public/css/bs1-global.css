@@ -28,10 +28,15 @@ html body header .c-wrapper {
 }
 html body main h1 {
   font-family: "Comfortaa", cursive;
+  text-transform: uppercase;
   font-weight: 700;
 }
 html body .card > img {
   height: 200px !important;
+}
+html body span.source {
+  font-size: 10px;
+  font-style: italic;
 }
 html body footer {
   background-color: #1E212D;

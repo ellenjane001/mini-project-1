@@ -1,0 +1,20 @@
+html {
+    body {
+        main {
+            .results {
+                section {
+                    margin: 10px;
+                    width: 80%;
+                    border-radius: 20px;
+
+                    img {
+                        border-top-left-radius: 20px;
+                        border-bottom-left-radius: 20px;
+                        width: 300px;
+                    }
+                }
+
+            }
+        }
+    }
+}

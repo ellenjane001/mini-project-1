@@ -1,48 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Inter&family=Shrikhand&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Inter&family=Shrikhand&display=swap');
 
-html {
-    body {
-        box-sizing: border-box;
-        font-family: 'Inter', sans-serif;
+    html {
+        body {
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
 
-        header {
-            flex-direction: column;
-            background-color: #FAF3E0;
-
-            @media (min-width:600px) {
-                flex-direction: row;
-            }
-
-            img {
-                @media (min-width:600px) {
-                    width: 30%;
-                }
-            }
-
-            .c-wrapper {
+            header {
                 flex-direction: column;
-                align-items: center;
+                background-color: #FAF3E0;
 
                 @media (min-width:600px) {
                     flex-direction: row;
                 }
+
+                img {
+                    @media (min-width:600px) {
+                        width: 30%;
+                    }
+                }
+
+                .c-wrapper {
+                    flex-direction: column;
+                    align-items: center;
+
+                    @media (min-width:600px) {
+                        flex-direction: row;
+                    }
+                }
             }
-        }
 
-        main {
-            h1 {
-                font-family: 'Comfortaa', cursive;
-                font-weight: 700;
+            main {
+                h1 {
+                    font-family: 'Comfortaa', cursive;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+
+
             }
-        }
 
-        .card>img {
-            height: 200px !important;
-        }
+            .card>img {
+                height: 200px !important;
+            }
 
-        footer {
-            background-color: #1E212D;
-            color: #FAF3E0;
+            span.source {
+                font-size: 10px;
+                font-style: italic;
+
+            }
+
+            footer {
+                background-color: #1E212D;
+                color: #FAF3E0;
+            }
         }
     }
-}

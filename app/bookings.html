@@ -19,9 +19,11 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
         defer>
         </script>
+    <!-- font-awesome -->
     <script src="https://kit.fontawesome.com/b140af86b3.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
+    <!-- header -->
     <header class="d-flex justify-content-between px-3 align-content-center">
         <img src="https://api.logo.com/api/v2/images?format=webp&logo=logo_9c8e936e-16fb-477f-ac78-2e18cc137548&width=2000&quality=100&background=transparent&fit=contain&u=1664523436"
             alt="" class="p-2 img-fluid">
@@ -37,7 +39,9 @@
             </div>
         </div>
     </header>
+    <!-- main -->
     <main>
+        <!-- navigation -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -71,8 +75,10 @@
             </div>
         </nav>
         <!-- template stops here -->
+        <!--form wrapper-->
         <div class="container-fluid d-flex justify-content-center">
-            <form class="d-flex flex-column border border-light p-2 m-3 bg-light">
+            <!-- booking form -->
+            <form class="d-flex flex-column border border-light p-2 m-3 bg-light" action="./search-result.html">
                 <div class="form-floating">
                     <input class="form-control my-1" type="search" name="destination" id="destination">
                     <label for="destination">Destination</label>
@@ -100,21 +106,30 @@
                         <label for="date-to">To</label>
                     </div>
                 </div>
-                <button class="btn btn-primary my-1" formaction="./search-result.html">Search</button>
+                <button class="btn btn-primary my-1">Search</button>
             </form>
         </div>
+        <!-- search suggestions -->
         <div class="container-fluid text-center py-3">
             <h1>Search suggestions</h1>
         </div>
+        <!-- hotel cards -->
         <div class="container-fluid d-flex justify-content-center gap-3 py-3">
             <div class="row">
+                <!-- hotel 1 -->
                 <div class="col d-flex justify-content-center py-3">
                     <div class="card" style="width: 18rem;">
                         <img src="https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                            class="card-img-top" alt="...">
+                            class="card-img-top" alt="hotel-1">
                         <div class="card-body">
                             <h5 class="card-title">Hotel 1</h5>
                             <div class="card-text d-flex flex-column gap-2 py-2">
+                                <span class="source">
+                                    Photo by <a
+                                        href="https://unsplash.com/@martenbjork?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marten
+                                        Bjork</a> on <a
+                                        href="https://unsplash.com/s/photos/hotel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                </span>
                                 <span>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -134,13 +149,20 @@
                         </div>
                     </div>
                 </div>
+                <!-- hotel 2 -->
                 <div class="col d-flex justify-content-center py-3">
                     <div class="card" style="width: 18rem;">
                         <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
-                            class="card-img-top" alt="...">
+                            class="card-img-top" alt="hotel-2">
                         <div class="card-body">
                             <h5 class="card-title">Hotel 2</h5>
                             <div class="card-text d-flex flex-column gap-2 py-2">
+                                <span class="source">
+                                    Photo by <a
+                                        href="https://unsplash.com/@ciudadmaderas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ciudad
+                                        Maderas</a> on <a
+                                        href="https://unsplash.com/s/photos/hotel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                </span>
                                 <span>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -160,13 +182,20 @@
                         </div>
                     </div>
                 </div>
+                <!-- hotel 3 -->
                 <div class="col d-flex justify-content-center py-3">
                     <div class="card" style="width: 18rem;">
                         <img src="https://images.unsplash.com/photo-1568084680786-a84f91d1153c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                            class="card-img-top" alt="...">
+                            class="card-img-top" alt="hotel-3">
                         <div class="card-body">
                             <h5 class="card-title">Hotel 3</h5>
                             <div class="card-text d-flex flex-column gap-2 py-2">
+                                <span class="source">
+                                    Photo by <a
+                                        href="https://unsplash.com/@quinguyen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">QUI
+                                        NGUYEN</a> on <a
+                                        href="https://unsplash.com/s/photos/hotel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                </span>
                                 <span>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -187,13 +216,20 @@
                         </div>
                     </div>
                 </div>
+                <!-- resort 1 -->
                 <div class="col d-flex justify-content-center py-3">
                     <div class="card" style="width: 18rem;">
                         <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
+                            class="card-img-top" alt="resort-1">
+                        <div class=" card-body">
                             <h5 class="card-title">Resort 1</h5>
                             <div class="card-text d-flex flex-column gap-2 py-2">
+                                <span class="source">
+                                    Photo by <a
+                                        href="https://unsplash.com/@edvinjohansson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Edvin
+                                        Johansson</a> on <a
+                                        href="https://unsplash.com/s/photos/hotel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                </span>
                                 <span>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -217,6 +253,7 @@
             </div>
         </div>
     </main>
+    <!-- footer -->
     <footer class="d-flex container-fluid border-top p-3 flex-column justify-content-center align-items-center">
         <div class="icons d-flex container-fluid justify-content-center gap-2 p-3">
             <i class="fa-brands fa-twitter"></i>
