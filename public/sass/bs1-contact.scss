@@ -7,39 +7,45 @@ html {
     body {
         main {
             nav+div {
-                height: 65.8vh;
                 &>div {
+                    height: 450px;
                     flex-direction: column;
-                }
 
-                @media (min-width:600px) {
-                    &>div {
+                    @media (min-width:600px) {
+
                         flex-direction: row;
+                        height: 65.8vh;
+                    }
+
+                    div.right {
+                        height: auto;
+                        background: url('https://images.unsplash.com/photo-1555392504-896a367196e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
+                        background-size: cover;
+
+                        @media (min-width:600px) {
+                            width: 50%;
+                        }
+
+                        h1 {
+                            font-family: 'Shrikhand', cursive;
+                            color: #FAF3E0;
+                            -webkit-text-stroke-width: 1px;
+                            -webkit-text-stroke-color: #B68973;
+                        }
+                    }
+
+                    form {
+                        height: 350px;
+
+                        @media (min-width:600px) {
+                            height: auto;
+                            width: 50%;
+                        }
+
                     }
                 }
 
-                div.right {
-                    height: auto;
-                    background: url('https://images.unsplash.com/photo-1555392504-896a367196e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
-                    background-size: cover;
 
-                    @media (min-width:600px) {
-                        width: 50%;
-                    }
-
-                    h1 {
-                        font-family: 'Shrikhand', cursive;
-                        color: #FAF3E0;
-                        -webkit-text-stroke-width: 1px;
-                        -webkit-text-stroke-color: #B68973;
-                    }
-                }
-
-                form {
-                    @media (min-width:600px) {
-                        width: 50%;
-                    }
-                }
             }
         }
     }
