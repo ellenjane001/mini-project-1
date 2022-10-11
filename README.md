@@ -1,1 +1,1 @@
-# project-practices
+# mini project 1
