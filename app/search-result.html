@@ -39,6 +39,7 @@
         </div>
     </header>
     <main>
+        <!-- navigation -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -58,6 +59,9 @@
                             <a class="nav-link" href="./rooms.html">Rooms</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="./cart.html">Cart</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="./contact-us.html">Contact</a>
                         </li>
                         <li class="nav-item">
@@ -73,7 +77,7 @@
         </nav>
         <!-- template stops here -->
         <!-- breadcrumb -->
-        <div class="container-fluid px-5">
+        <div class="container-fluid px-5 pt-3">
             <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
                 aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -85,54 +89,173 @@
         </div>
         <!-- breadcrumb -->
         <!-- results and filter - wrapper -->
-        <div class="container-fluid p-5">
+        <div class="container-fluid px-5 pb-3">
             <div class="row">
-                <div class="col-3">
+                <!-- left -->
+                <div class="col-3 filter-panel">
                     <!-- filter -->
-
+                    <div class="filter-by d-flex flex-column">
+                        <!-- general filter -->
+                        <h4>Filter by</h4>
+                        <div class="gen-filter d-flex flex-column border ps-2 py-2 my-1">
+                            <h6>Category</h6>
+                            <!-- hotel -->
+                            <label for="hotel">
+                                <input type="checkbox" name="" id="hotel">
+                                <span>Hotel</span>
+                            </label>
+                            <!-- resort -->
+                            <label for="resort">
+                                <input type="checkbox" name="" id="resort">
+                                <span>Resort</span>
+                            </label>
+                            <!-- pool -->
+                            <label for="pool">
+                                <input type="checkbox" name="" id="pool">
+                                <span>Pool</span>
+                            </label>
+                            <!-- free-wifi -->
+                            <label for="free-wifi">
+                                <input type="checkbox" name="" id="free-wifi">
+                                <span>Free Wifi</span>
+                            </label>
+                            <!-- aircon -->
+                            <label for="aircon">
+                                <input type="checkbox" name="" id="aircon">
+                                <span>Air Conditioned</span>
+                            </label>
+                        </div>
+                        <!-- star-filter -->
+                        <div class="star-filter d-flex flex-column border ps-2 py-2 my-1">
+                            <h6>Stars</h6>
+                            <!-- one star -->
+                            <label for="one-star">
+                                <input type="checkbox" name="" id="one-star">
+                                <span><i class="fa-solid fa-star"></i></span>
+                            </label>
+                            <!-- twostar -->
+                            <label for="two-star">
+                                <input type="checkbox" name="" id="two-star">
+                                <span><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i></span>
+                            </label>
+                            <!-- 3star -->
+                            <label for="3-star">
+                                <input type="checkbox" name="" id="3-star">
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </label>
+                            <!-- 4star -->
+                            <label for="4-star">
+                                <input type="checkbox" name="" id="4-star">
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </label>
+                            <!-- 5star -->
+                            <label for="5-star">
+                                <input type="checkbox" name="" id="5-star">
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-9 results">
+                <!-- right -->
+                <div class="col-9 results d-flex flex-column align-items-center">
                     <!-- results -->
+                    <!-- res 1 -->
                     <section class="border">
                         <img src="https://images.unsplash.com/photo-1539284811665-fd56f8b1b47c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                             alt="result-1">
-                        <span class="source">
-                            Photo by <a
-                                href="https://unsplash.com/@danielcgold?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dan
-                                Gold</a> on <a
-                                href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                        </span>
+                        <div class="def-wrapper">
+                            <span class="source">
+                                Photo by <a
+                                    href="https://unsplash.com/@danielcgold?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dan
+                                    Gold</a> on <a
+                                    href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                            </span>
+                            <span class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+
+                        </div>
                     </section>
+                    <!-- res 2 -->
                     <section class="border">
                         <img src="https://images.unsplash.com/photo-1609517448522-2e108986b505?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
                             alt="result-2">
-                        <span class="source">
-                            Photo by <a
-                                href="https://unsplash.com/@chessacr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christian
-                                Hess Araya</a> on <a
-                                href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                        </span>
+                        <div class="def-wrapper">
+                            <span class="source">
+                                Photo by <a
+                                    href="https://unsplash.com/@chessacr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christian
+                                    Hess Araya</a> on <a
+                                    href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                            </span>
+                            <span class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </div>
                     </section>
+                    <!-- res 3 -->
                     <section class="border">
                         <img src="https://images.unsplash.com/photo-1506399790179-ddf35cdb2675?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80    "
                             alt="result-3">
-                        <span class="source">
-                            Photo by <a
-                                href="https://unsplash.com/@thekokatron?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ko
-                                Ko
-                                Win</a> on <a
-                                href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                        </span>
+                        <div class="def-wrapper">
+                            <span class="source">
+                                Photo by <a
+                                    href="https://unsplash.com/@thekokatron?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ko
+                                    Ko
+                                    Win</a> on <a
+                                    href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                            </span>
+                            <span class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </div>
                     </section>
+                    <!-- res 4 -->
                     <section class="border">
                         <img src="https://images.unsplash.com/photo-1569369926169-9ee7fb80adeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1163&q=80"
                             alt="result-4">
-                        <span class="source">
-                            Photo by <a
-                                href="https://unsplash.com/@simplysuzy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Suzy
-                                Brooks</a> on <a
-                                href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                        </span>
+                        <div class="def-wrapper">
+                            <span class="source">
+                                Photo by <a
+                                    href="https://unsplash.com/@simplysuzy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Suzy
+                                    Brooks</a> on <a
+                                    href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                            </span>
+                            <span class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </div>
                     </section>
                 </div>
             </div>
