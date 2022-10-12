@@ -1,8 +1,35 @@
-html body main table tbody tr td:nth-child(2) img {
-  display: none;
+html body main nav + div div.overlay {
+  position: absolute;
+  height: 600px;
+  width: 100%;
+  z-index: 1;
+  background-color: #080d15;
+  opacity: 0.45;
+  top: 0;
+  left: 0%;
 }
-@media (min-width: 600px) {
-  html body main table tbody tr td:nth-child(2) img {
-    width: 300px;
-  }
+html body main nav + div div.table-responsive {
+  position: absolute;
+  z-index: 2;
+  left: 0%;
+  top: 5%;
+}
+html body main nav + div div.table-responsive table tbody tr td {
+  text-align: center;
+}
+html body main nav + div span.source {
+  position: absolute;
+  top: 95%;
+  left: 3%;
+  color: #FAF3E0;
+  z-index: 2;
+}
+html body main nav + div span.source a {
+  color: #FAF3E0;
+}
+html body main nav + div > div.bg-img {
+  background: url("https://images.unsplash.com/photo-1631049780159-f6d63ab444da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  background-position: 100% 50%;
+  height: 600px;
 }/*# sourceMappingURL=bs1-cart.css.map */

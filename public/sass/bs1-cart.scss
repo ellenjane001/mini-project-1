@@ -1,21 +1,52 @@
 html {
     body {
         main {
-            table {
-                tbody {
-                    tr {
-                        td {
-                            &:nth-child(2) {
-                                img {
-                                    display: none;
+            nav+div {
 
-                                    @media (min-width:600px) {
-                                        width: 300px;
-                                    }
+                div.overlay {
+                    position: absolute;
+                    height: 600px;
+                    width: 100%;
+                    z-index: 1;
+                    background-color: #080d15;
+                    opacity: .45;
+                    top: 0;
+                    left: 0%;
+                }
+
+                div.table-responsive {
+                    position: absolute;
+                    z-index: 2;
+                    left: 0%;
+                    top: 5%;
+                    table{
+                        tbody{
+                            tr{
+                                td{
+                                    text-align: center;
                                 }
                             }
                         }
                     }
+                }
+
+                span.source {
+                    position: absolute;
+                    top: 95%;
+                    left: 3%;
+                    color: #FAF3E0;
+                    z-index: 2;
+
+                    a {
+                        color: #FAF3E0;
+                    }
+                }
+
+                &>div.bg-img {
+                    background: url('https://images.unsplash.com/photo-1631049780159-f6d63ab444da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+                    background-size: cover;
+                    background-position: 100% 50%;
+                    height: 600px;
                 }
             }
         }

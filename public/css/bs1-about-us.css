@@ -23,7 +23,7 @@ html body main nav + div > div figure {
   z-index: 2;
   border-color: #FAF3E0 !important;
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px 20px;
 }
 html body main nav + div > div figure figcaption {
   color: #FAF3E0 !important;

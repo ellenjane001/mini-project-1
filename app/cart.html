@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habitat Finder - Home</title>
+    <title>Habitat Finder - Cart</title>
     <link rel="apple-touch-icon" sizes="180x180" href="../public/assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../public/assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../public/assets/favicon//favicon-16x16.png">
@@ -22,6 +22,7 @@
     <script src="https://kit.fontawesome.com/b140af86b3.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
+    <!-- header -->
     <header class="d-flex justify-content-between px-3 align-content-center">
         <img src="https://api.logo.com/api/v2/images?format=webp&logo=logo_9c8e936e-16fb-477f-ac78-2e18cc137548&width=2000&quality=100&background=transparent&fit=contain&u=1664523436"
             alt="" class="p-2 img-fluid">
@@ -77,26 +78,78 @@
         <!-- template stops here -->
         <div class="container-fluid p-2 text-center">
             <h1>Cart</h1>
-            <table class="table table-hover table-responsive">
-                <thead>
-                    <th scope="col">#</th>
-                    <th scope="col">Particulars</th>
-                    <th scope="col">Quantity</th>
-                    <th scope="col">Amount</th>
-                    <th scope="col">Option</th>
-                </thead>
-                <tbody class="table-group-divider">
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>
-                            <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" alt="image-in-cart">
-                            Hotel (3 star)</td>
-                        <td>3D2N</td>
-                        <td>&#8369; 3,170.00</td>
-                        <td><a href="./checkout.html">Checkout</a></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="container-fluid bg-img position-relative border rounded-3">
+                <div class="overlay border rounded-3"></div>
+                <div class="container-fluid table-responsive">
+                    <table class="table table-light table-hover">
+                        <thead>
+                            <th scope="col">#</th>
+                            <th scope="col">Particulars</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Options</th>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Hotel (3 star)</td>
+                                <td>3D2N</td>
+                                <td>&#8369; 3,170.00</td>
+                                <td>
+                                    <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                    <a class="btn btn-outline-primary" href="./checkout.html">
+                                        Checkout
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Resort (4 star)</td>
+                                <td>2D1N</td>
+                                <td>&#8369; 2,891.00</td>
+                                <td>
+                                    <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                    <a class="btn btn-outline-primary" href="./checkout.html">
+                                        Checkout
+                                    </a>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <span class="source">
+                    Photo by <a
+                        href="https://unsplash.com/@3dottawa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Point3D
+                        Commercial Imaging Ltd.</a> on <a
+                        href="https://unsplash.com/s/photos/hotel-reception?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </span>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <!-- footer template -->
