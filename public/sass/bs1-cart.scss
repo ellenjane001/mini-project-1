@@ -1,0 +1,23 @@
+html {
+    body {
+        main {
+            table {
+                tbody {
+                    tr {
+                        td {
+                            &:nth-child(2) {
+                                img {
+                                    display: none;
+
+                                    @media (min-width:600px) {
+                                        width: 300px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
