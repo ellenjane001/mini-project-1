@@ -1,0 +1,55 @@
+html {
+    body {
+        main {
+            nav+div {
+                nav {
+                    ol {
+                        @media (max-width:600px) {
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                    }
+                }
+
+                &+div {
+                    &>div.row {
+                        flex-direction: column;
+
+                        @media (min-width:600px) {
+                            flex-direction: row;
+                        }
+
+                        div.col-9 {
+                            @media (max-width:600px) {
+                                width: 100%;
+                            }
+                        }
+
+                        div.col-3 {
+                            @media (max-width:600px) {
+                                width: 100%;
+                            }
+
+                            div.img--holder {
+                                display: flex;
+                                flex-direction: column;
+
+                                img {
+                                    height: 300px;
+                                    width: auto;
+
+                                    @media (max-width:600px) {
+                                        height: 200px;
+                                    }
+
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

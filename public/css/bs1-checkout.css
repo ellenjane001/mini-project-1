@@ -1,0 +1,37 @@
+@media (max-width: 600px) {
+  html body main nav + div nav ol {
+    align-items: center;
+    justify-content: center;
+  }
+}
+html body main nav + div + div > div.row {
+  flex-direction: column;
+}
+@media (min-width: 600px) {
+  html body main nav + div + div > div.row {
+    flex-direction: row;
+  }
+}
+@media (max-width: 600px) {
+  html body main nav + div + div > div.row div.col-9 {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  html body main nav + div + div > div.row div.col-3 {
+    width: 100%;
+  }
+}
+html body main nav + div + div > div.row div.col-3 div.img--holder {
+  display: flex;
+  flex-direction: column;
+}
+html body main nav + div + div > div.row div.col-3 div.img--holder img {
+  height: 300px;
+  width: auto;
+}
+@media (max-width: 600px) {
+  html body main nav + div + div > div.row div.col-3 div.img--holder img {
+    height: 200px;
+  }
+}/*# sourceMappingURL=bs1-checkout.css.map */
