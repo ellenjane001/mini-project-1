@@ -43,6 +43,20 @@ html body main .results section img {
 html body main .results section div.def-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 10px;
+  padding: 20px;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+}
+html body main .results section div.def-wrapper span.ratings {
+  color: #d7942d;
+}
+html body main .results section div.def-wrapper span.price {
+  align-self: flex-end;
+  background-color: #d7942d;
+  padding: 3px;
+  color: #fff;
+}
+html body main .results section div.def-wrapper button {
+  align-self: flex-start;
 }/*# sourceMappingURL=bs1-search-res.css.map */

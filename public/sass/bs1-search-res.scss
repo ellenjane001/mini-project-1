@@ -50,8 +50,25 @@ html {
                     div.def-wrapper {
                         display: flex;
                         flex-direction: column;
-                        align-items: center;
-                        padding: 10px;
+                        padding: 20px;
+                        width: 100%;
+                        justify-content: center;
+                        gap: 10px;
+
+                        span.ratings {
+                            color: #d7942d;
+                        }
+
+                        span.price {
+                            align-self: flex-end;
+                            background-color: #d7942d;
+                            padding: 3px;
+                            color: #fff;
+                        }
+
+                        button {
+                            align-self: flex-start;
+                        }
                     }
                 }
             }
