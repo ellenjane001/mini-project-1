@@ -41,6 +41,10 @@
 
             .card>img {
                 height: 250px !important;
+
+                @media (min-width:900px) and (max-width:1000px) {
+                    height: 150px !important;
+                }
             }
 
             span.source {

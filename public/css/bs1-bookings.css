@@ -44,6 +44,11 @@ html body main .card .card-body .card-text {
 html body main .card .card-body .card-text svg {
   color: #d7942d;
 }
+@media (max-width: 1200px) {
+  html body main .card .card-body .card-text ~ div {
+    flex-direction: column;
+  }
+}
 html body main .card .card-body .price {
   color: #d7942d;
   padding: 3px;

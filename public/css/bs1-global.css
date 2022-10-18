@@ -34,6 +34,11 @@ html body main h1 {
 html body .card > img {
   height: 250px !important;
 }
+@media (min-width: 900px) and (max-width: 1000px) {
+  html body .card > img {
+    height: 150px !important;
+  }
+}
 html body span.source {
   font-size: 10px;
   font-style: italic;

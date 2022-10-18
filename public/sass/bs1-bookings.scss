@@ -59,6 +59,12 @@ html {
                         svg {
                             color: #d7942d;
                         }
+
+                        &~div {
+                            @media (max-width:1200px) {
+                                flex-direction: column;
+                            }
+                        }
                     }
 
                     .price {
