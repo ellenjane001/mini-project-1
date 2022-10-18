@@ -36,11 +36,17 @@ html body main nav + div form div.destination-wrapper > * {
 html body main nav + div form div.date-wrapper > * {
   width: 50%;
 }
+html body main .card .card-body .card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 html body main .card .card-body .card-text svg {
   color: #d7942d;
 }
 html body main .card .card-body .price {
   color: #d7942d;
+  padding: 3px;
 }
 html body main .card .card-body span.labels {
   border: solid 0.01px;

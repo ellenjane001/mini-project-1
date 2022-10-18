@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
     <link rel="manifest" href="./public/assets/favicon/site.webmanifest">
     <link rel="stylesheet" href="./public/css/bs1-global.css">
     <link rel="stylesheet" href="./public/css/bs1-home.css">
+    <link rel="stylesheet" href="./public/css/carousel.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -22,10 +24,12 @@
         defer></script>
     <script src="https://kit.fontawesome.com/b140af86b3.js" crossorigin="anonymous" defer></script>
 </head>
+
 <body>
+    <!-- header -->
     <header class="d-flex justify-content-between px-3 align-content-center">
         <img src="https://api.logo.com/api/v2/images?format=webp&logo=logo_9c8e936e-16fb-477f-ac78-2e18cc137548&width=2000&quality=100&background=transparent&fit=contain&u=1664523436"
-            alt="" class="p-2 img-fluid">
+            alt="logo" id="logo" class="p-2 img-fluid">
         <div class="c-wrapper d-flex justify-content-between">
             <div class="email d-flex align-items-center px-2">
                 <h6 class="text-muted"><i class="fa-solid fa-envelope"></i> <span>:</span> email@habitat-finders.com
@@ -38,7 +42,9 @@
             </div>
         </div>
     </header>
+    <!-- main -->
     <main>
+        <!-- navigation -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -53,9 +59,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./app/bookings.html">Book</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./app/rooms.html">Rooms</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./app/cart.html">Cart
@@ -76,208 +79,331 @@
             </div>
         </nav>
         <!-- Carousel -->
-        <div class="carousel-wrapper container-fluid position-relative py-2">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://images.unsplash.com/photo-1585412727339-54e4bae3bbf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                            class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://securecdn.pymnts.com/wp-content/uploads/2016/05/Hotel-Room-Secondary-Market.jpg"
-                            class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://images.unsplash.com/photo-1558882224-dda166733046?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
-                            class="d-block w-100" alt="...">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-label="Slide 1" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                    class=""></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                    class=""></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1497956974293-97920f88caf0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80"
+                        class="d-block w-100 h-50" alt="...">
+                    <div class="container">
+                        <div class="carousel-caption text-center">
+                            <h1 class="display-4">Affordable Hotels and Resorts</h1>
+                            <p class="text-light"> Find comfort with less price!</p>
+                            <p><a class="btn btn-lg btn-light" href="./app/bookings.html">Book Now</a></p>
+                        </div>
                     </div>
                 </div>
-                <div class="overlay">
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1589271243979-3153ef0dcbd7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        class="d-block w-100" alt="...">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1 class="text-dark display-4">Stay Longer, Save More</h1>
+                            <p class="text-dark"> Save 50% when booking a stay for more than a week *</p>
+                            <p><a class="btn btn-lg btn-dark" href="./app/bookings.html">Book Now</a></p>
+                        </div>
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        class="d-block w-100" alt="...">
+                    <div class="container">
+                        <div class="carousel-caption text-center">
+                            <h1 class="text-primary">Book in Advance</h1>
+                            <p class="text-primary">Get 20% Discount *
+                            </p>
+                            <p><a class="btn btn-lg btn-outline-primary" href="./app/bookings.html">Book now</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="position-absolute translate-middle-x d-flex flex-column align-items-center">
-                <h1 class="display-2">Find Cheap Hotel and Resorts</h1>
-                <form>
-                    <button class="btn btn-outline-light btn-lg" formaction="./app/bookings.html">Book Now!</button>
-                </form>
+            <div class="overlay">
             </div>
-        </div>
-        <!-- Stay longer save more -->
-        <div class="container-fluid text-center border-bottom my-3 py-3">
-            <div class="row align-items-center">
-                <section class="col p-2">
-                    <h1 class="mx-3">Stay Longer, Save More</h1>
-                    <h6 class="text-muted mx-3">
-                        Save 50% when booking a stay for more than a week *
-                    </h6>
-                </section>
-                <section class="col p-2">
-                    <h1 class="mx-3">Book in Advance</h1>
-                    <h6 class="text-muted mx-3">Get 20% Discount *</h6>
-                </section>
-            </div>
-            <section class="col">
-                <i class="text-muted">* terms and conditions apply</i>
-            </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
         <!-- top rated -->
-        <div class="container-fluid text-center border-bottom my-3 py-3">
-            <h1>Top Hotels</h1>
-            <div class="row">
-                <!-- hotel 1 -->
-                <div class="col py-2 d-flex flex-column align-items-center justify-content-center">
-                    <img src="https://images.unsplash.com/photo-1576424298745-7467a0aa532b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                        alt="hotel 1" width="200" height="200" class="rounded-circle">
-                    <span class="title">
-                        HOTEL 1
-                    </span>
-                    <span class="source">
-                        Photo by <a
-                            href="https://unsplash.com/@zuizuii?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lucas
-                            Hoang</a> on <a
-                            href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                    </span>
+        <div class="container-fluid text-center border-bottom p-5 top-rated">
+            <h1>Top Ranking Hotels</h1>
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <!-- hotel 1 -->
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-3 shadow-lg"
+                        style="background-image: url('https://images.unsplash.com/photo-1576424298745-7467a0aa532b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h5 class="pt-5 mt-5 mb-4 display-6">Hotel 1</h5>
+                            <div class="d-flex justify-content-between">
+                                <span class="ratings">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="source">
+                                    Photo by <a
+                                        href="https://unsplash.com/@zuizuii?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lucas
+                                        Hoang</a> on <a
+                                        href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <!-- hotel 2 -->
-                <div class="col py-2 d-flex flex-column align-items-center justify-content-center">
-                    <img src="https://images.unsplash.com/photo-1607570413857-d83fc84b4f64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                        alt="hotel 2" width="200" height="200" class="rounded-circle">
-                    <span class="title">
-                        HOTEL 2
-                    </span>
-                    <span class="source">
-                        Photo by <a
-                            href="https://unsplash.com/@fernthephotographer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Fern
-                            M. Lomibao</a> on <a
-                            href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                    </span>
+                <div class="col">
+                    <!-- hotel 2 -->
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-3 shadow-lg"
+                        style="background-image: url('https://images.unsplash.com/photo-1607570413857-d83fc84b4f64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h5 class="pt-5 mt-5 mb-4 display-6">Hotel 2
+                            </h5>
+                            <div class="d-flex justify-content-between">
+                                <span class="ratings">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="source">
+                                    Photo by <a
+                                        href="https://unsplash.com/@fernthephotographer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Fern
+                                        M. Lomibao</a> on <a
+                                        href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- hotel 3 -->
-                <div class="col py-2 d-flex flex-column align-items-center justify-content-center">
-                    <img src="https://images.unsplash.com/photo-1602281807778-ef209a1318d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                        alt="hotel-3" width="200" height="200" class="rounded-circle">
-                    <span class="title">
-                        HOTEL 3
-                    </span>
-                    <span class="source">
-                        Photo by <a
-                            href="https://unsplash.com/@justdushawn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">dusan
-                            jovic</a> on <a
-                            href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                    </span>
+                <div class="col">
+                    <!-- hotel 3 -->
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-3 shadow-lg"
+                        style="background-image: url('https://images.unsplash.com/photo-1602281807778-ef209a1318d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h5 class="pt-5 mt-5 mb-4 display-6">Hotel 3</h5>
+                            <div class="d-flex justify-content-between">
+                                <span class="ratings">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="source">
+                                    Photo by <a
+                                        href="https://unsplash.com/@justdushawn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">dusan
+                                        jovic</a> on <a
+                                        href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- hotel 4 -->
-                <div class="col py-2 d-flex flex-column align-items-center justify-content-center">
-                    <img src="https://images.unsplash.com/photo-1576504446184-d4ce8e6f2adf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80"
-                        alt="hotel-4" width="200" height="200" class="rounded-circle">
-                    <span class="title">
-                        HOTEL 4
-                    </span>
-                    <span class="source">
-                        Photo by <a
-                            href="https://unsplash.com/@joshuafuller?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua
-                            Fuller</a> on <a
-                            href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                    </span>
+                <div class="col">
+                    <!-- hotel 4 -->
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-3 shadow-lg"
+                        style="background-image: url('https://images.unsplash.com/photo-1576504446184-d4ce8e6f2adf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h5 class="pt-5 mt-5 mb-4 display-6">Hotel 4</h5>
+                            <div class="d-flex justify-content-between">
+                                <span class="ratings">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="source">
+                                    Photo by <a
+                                        href="https://unsplash.com/@joshuafuller?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua
+                                        Fuller</a> on <a
+                                        href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- hotel 5 -->
-                <div class="col py-2 d-flex flex-column align-items-center justify-content-center">
-                    <img src="https://images.unsplash.com/photo-1633291944374-dc6ae97a60da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                        alt="hotel-5" width="200" height="200" class="rounded-circle">
-                    <span class="title">
-                        HOTEL 5
-                    </span>
-                    <span class="source">
-                        Photo by <a
-                            href="https://unsplash.com/@florianmarette?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Florian
-                            Marette</a> on <a
-                            href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                    </span>
+                <div class="col">
+                    <!-- hotel 5 -->
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-3 shadow-lg"
+                        style="background-image: url('https://images.unsplash.com/photo-1633291944374-dc6ae97a60da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h5 class="pt-5 mt-5 mb-4 display-6">Hotel 5</h5>
+                            <div class="d-flex justify-content-between">
+                                <span class="ratings">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="source">
+                                    Photo by <a
+                                        href="https://unsplash.com/@florianmarette?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Florian
+                                        Marette</a> on <a
+                                        href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- hotel 6 -->
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-3 shadow-lg"
+                        style="background-image: url('https://images.unsplash.com/photo-1589923158776-cb4485d99fd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h5 class="pt-5 mt-5 mb-4 display-6">Hotel 6</h5>
+                            <div class="d-flex justify-content-between">
+                                <span class="ratings">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="source">
+                                    Photo by <a
+                                        href="https://unsplash.com/@_christianlambert?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christian
+                                        Lambert</a> on <a
+                                        href="https://unsplash.com/s/photos/hotel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- We also offer -->
-        <div class="container-fluid mt-30 text-center p-4 border-bottom">
-            <h2>We also offer venues for events nationwide!</h2>
-            <div class="row p-3 offers">
-                <!-- Wedding events -->
-                <div class="col p-2 d-flex flex-column align-items-center">
-                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
-                        class="border rounded-1">
-                    <div class="caption d-flex flex-column">
-                        <span class="title">
-                            Wedding Events
-                        </span>
-                        <span class="details">
-                            Enjoy a grand, luxurious and affordable wedding package!
-                        </span>
-                        <span class="source">
-                            Photo by <a
-                                href="https://unsplash.com/@alvarocvg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Álvaro
-                                CvG</a> on <a
-                                href="https://unsplash.com/s/photos/wedding?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                        </span>
+        <div class="album p-5 text-center">
+            <h2>We also offer venues for special events in any preferred hotel or resort nationwide</h2>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <!-- wedding event -->
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                                class="rounded-top">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <h5 class="title">
+                                        Wedding Events
+                                    </h5>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted"> <span class="source">
+                                            Photo by <a
+                                                href="https://unsplash.com/@alvarocvg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Álvaro
+                                                CvG</a> on <a
+                                                href="https://unsplash.com/s/photos/wedding?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                        </span></small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!-- outdoor activities -->
-                <div class="col p-2 d-flex flex-column align-items-center">
-                    <img src="https://images.unsplash.com/photo-1576842546422-60562b9242ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1158&q=80"
-                        class="border rounded-1">
-                    <div class="caption d-flex flex-column">
-                        <span class="title">
-                            Outdoor Events
-                        </span>
-                        <span class="details">
-                            Team building? Birthday Party? Reserve the pool area for a private event.
-                        </span>
-                        <span class="source">
-                            Photo by <a
-                                href="https://unsplash.com/@okikuy0930?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yukiko
-                                Kanada</a> on <a
-                                href="https://unsplash.com/s/photos/hotel-event?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                        </span>
+                    <div class="col">
+                        <!-- outdoor events -->
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1576842546422-60562b9242ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1158&q=80"
+                                class="rounded-top">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <h5>Outdoor Events</h5>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted"> <span class="source">
+                                            Photo by <a
+                                                href="https://unsplash.com/@okikuy0930?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yukiko
+                                                Kanada</a> on <a
+                                                href="https://unsplash.com/s/photos/hotel-event?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                        </span></small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!-- beach -->
-                <div class="col p-xl-2 d-flex flex-column align-items-center">
-                    <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                        class="border rounded-1">
-                    <div class="caption d-flex flex-column">
-                        <span class="title">
-                            Beach
-                        </span>
-                        <span class="details">
-                            Enjoy the solitude by renting a private beach!
-                        </span>
-                        <span class="source">
-                            Photo by <a
-                                href="https://unsplash.com/es/@ethanrobertson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ethan
-                                Robertson</a> on <a
-                                href="https://unsplash.com/s/photos/beach?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                        </span>
+                    <div class="col">
+                        <!-- pool events -->
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                class="rounded-top">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <h5>Beach</h5>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted"><span class="source">
+                                            Photo by <a
+                                                href="https://unsplash.com/es/@ethanrobertson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ethan
+                                                Robertson</a> on <a
+                                                href="https://unsplash.com/s/photos/beach?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                        </span></small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <h6><i><a href="./app/contact-us.html">click here</a> to send us a message for more details</i></h6>
+        </div>
+        <!-- terms and conditions -->
+        <div class="container-fluid text-center border-bottom pb-2">
+            <i><a href="./app/contact-us.html">click here</a> to send us a message for more details</i>
+            <section>
+                <i class="text-muted">* terms and conditions apply</i>
+            </section>
         </div>
         <!-- newsletter -->
-        <div class="container-fluid newsletter py-3">
+
+        <div class="container-fluid px-5 text-center pt-2">
+            <!-- Payment portals -->
+            <h3>Payment Partners</h3>
+            <div class="row">
+                <div class="col">
+                    <img src="https://img.icons8.com/color/96/000000/mastercard.png" />
+                </div>
+                <div class="col">
+                    <img src="https://img.icons8.com/color/96/000000/visa.png" />
+                </div>
+                <div class="col">
+                    <img src="https://img.icons8.com/plasticine/100/000000/gcash.png" />
+                </div>
+                <div class="col">
+                    <img src="https://img.icons8.com/color/96/000000/paypal.png" />
+                </div>
+                <div class="col">
+                    <img src="https://img.icons8.com/fluency/96/000000/cash-app--v2.png" />
+                </div>
+                <div class="col">
+                    <img src="https://img.icons8.com/color/96/000000/stripe.png" />
+                </div>
+                <div class="col">
+                    <img src="https://img.icons8.com/color/96/000000/amex.png" />
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid newsletter py-3 border-bottom">
             <h4>Sign up to our newsletter to receive deals and discounts!</h4>
             <form class="d-flex gap-2">
                 <input type="email" name="" id="" class="form-control">
                 <button class="btn btn-outline-primary">Submit</button>
             </form>
         </div>
+       
+
     </main>
     <!-- footer -->
     <footer class="d-flex container-fluid border-top p-3 flex-column justify-content-center align-items-center">
@@ -291,4 +417,5 @@
         </div>
     </footer>
 </body>
+
 </html>

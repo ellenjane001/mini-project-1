@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,11 +23,12 @@
     <!-- font-awesome -->
     <script src="https://kit.fontawesome.com/b140af86b3.js" crossorigin="anonymous" defer></script>
 </head>
+
 <body>
     <!-- header -->
     <header class="d-flex justify-content-between px-3 align-content-center">
         <img src="https://api.logo.com/api/v2/images?format=webp&logo=logo_9c8e936e-16fb-477f-ac78-2e18cc137548&width=2000&quality=100&background=transparent&fit=contain&u=1664523436"
-            alt="" class="p-2 img-fluid">
+            alt="logo" id="logo" class="p-2 img-fluid">
         <div class="c-wrapper d-flex justify-content-between">
             <div class="email d-flex align-items-center px-2">
                 <h6 class="text-muted"><i class="fa-solid fa-envelope"></i> <span>:</span> email@habitat-finders.com
@@ -56,9 +58,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="./bookings.html">Book</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./rooms.html">Rooms</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./cart.html">Cart</a>
@@ -112,148 +111,564 @@
                 <button class="btn btn-primary my-1">Search</button>
             </form>
         </div>
-        <!-- search suggestions -->
+        <!-- hotel gallery -->
         <div class="container-fluid text-center py-3">
-            <h1>Search suggestions</h1>
+            <h1>Hotels and Resorts</h1>
         </div>
-        <!-- hotel cards -->
-        <div class="container-fluid d-flex justify-content-center gap-3 py-3">
-            <div class="row">
-                <!-- hotel 1 -->
-                <div class="col d-flex justify-content-center py-3">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                            class="card-img-top" alt="hotel-1">
-                        <div class="card-body">
-                            <h5 class="card-title">Hotel 1</h5>
-                            <div class="card-text d-flex flex-column gap-2 py-2">
-                                <span class="source">
-                                    Photo by <a
-                                        href="https://unsplash.com/@martenbjork?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marten
-                                        Bjork</a> on <a
-                                        href="https://unsplash.com/s/photos/hotel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                                </span>
-                                <span>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                                <span>
-                                    <span class="labels">Free wifi</span>
-                                    <span class="labels">Breakfast</span>
-                                </span>
-                                <span class="price">
-                                    &#8369; 1,239.00
-                                </span>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <!-- hotel 1 -->
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                class="card-img-top" alt="hotel-1">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span>
+                                        <span class="labels">Free wifi</span>
+                                        <span class="labels">Breakfast</span>
+                                    </span>
+                                    <span class="price">
+                                        &#8369; 1,239.00
+                                    </span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="./hotel-1.html" class="btn btn-outline-secondary">Check Rooms</a>
+                                    </div>
+                                    <small class="text-muted"><span class="source">
+                                            Photo by <a
+                                                href="https://unsplash.com/@martenbjork?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marten
+                                                Bjork</a> on <a
+                                                href="https://unsplash.com/s/photos/hotel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                        </span></small>
+                                </div>
                             </div>
-                            <a href="./hotel-1.html" class="btn btn-primary">Check Rooms</a>
                         </div>
                     </div>
-                </div>
-                <!-- hotel 2 -->
-                <div class="col d-flex justify-content-center py-3">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
-                            class="card-img-top" alt="hotel-2">
-                        <div class="card-body">
-                            <h5 class="card-title">Hotel 2</h5>
-                            <div class="card-text d-flex flex-column gap-2 py-2">
-                                <span class="source">
-                                    Photo by <a
-                                        href="https://unsplash.com/@ciudadmaderas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ciudad
-                                        Maderas</a> on <a
-                                        href="https://unsplash.com/s/photos/hotel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                                </span>
-                                <span>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <span>
-                                    <span class="labels">Free wifi</span>
-                                    <span class="labels">Parking</span>
-                                </span>
-                                <span class="price">
-                                    &#8369; 2,249.00
-                                </span>
+                    <div class="col">
+                        <!-- hotel 2 -->
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
+                                class="card-img-top" alt="hotel-2">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </span>
+                                    <span>
+                                        <span class="labels">Free wifi</span>
+                                        <span class="labels">Parking</span>
+                                    </span>
+                                    <span class="price">
+                                        &#8369; 2,249.00
+                                    </span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="./hotel-2.html" class="btn btn-outline-secondary">Check Rooms</a>
+                                    </div>
+                                    <small class="text-muted"> <span class="source">
+                                            Photo by <a
+                                                href="https://unsplash.com/@ciudadmaderas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ciudad
+                                                Maderas</a> on <a
+                                                href="https://unsplash.com/s/photos/hotel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                        </span></small>
+                                </div>
                             </div>
-                            <a href="./hotel-2.html" class="btn btn-primary">Check Rooms</a>
                         </div>
                     </div>
-                </div>
-                <!-- hotel 3 -->
-                <div class="col d-flex justify-content-center py-3">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://images.unsplash.com/photo-1568084680786-a84f91d1153c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                            class="card-img-top" alt="hotel-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Hotel 3</h5>
-                            <div class="card-text d-flex flex-column gap-2 py-2">
-                                <span class="source">
-                                    Photo by <a
-                                        href="https://unsplash.com/@quinguyen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">QUI
-                                        NGUYEN</a> on <a
-                                        href="https://unsplash.com/s/photos/hotel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                                </span>
-                                <span>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                                <span>
-                                    <span class="labels">Free wifi</span>
-                                    <span class="labels">Parking</span>
-                                    <span class="labels">Fitness Center</span>
-                                </span>
-                                <span class="price">
-                                    &#8369; 3,279.00
-                                </span>
+                    <div class="col">
+                        <!-- hotel 3 -->
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1568084680786-a84f91d1153c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                                class="card-img-top" alt="hotel-3">
+                            <div class="card-body">
+                                <div class="card-text">
+
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span>
+                                        <span class="labels">Free wifi</span>
+                                        <span class="labels">Parking</span>
+                                        <span class="labels">Fitness Center</span>
+                                    </span>
+                                    <span class="price">
+                                        &#8369; 3,279.00
+                                    </span>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="./hotel-3.html" class="btn btn-outline-secondary">Check Rooms</a>
+                                    </div>
+                                    <small class="text-muted"><span class="source">
+                                            Photo by <a
+                                                href="https://unsplash.com/@quinguyen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">QUI
+                                                NGUYEN</a> on <a
+                                                href="https://unsplash.com/s/photos/hotel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                        </span></small>
+                                </div>
                             </div>
-                            <a href="./hotel-3.html" class="btn btn-primary">Check Rooms</a>
                         </div>
                     </div>
-                </div>
-                <!-- resort 1 -->
-                <div class="col d-flex justify-content-center py-3">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                            class="card-img-top" alt="resort-1">
-                        <div class=" card-body">
-                            <h5 class="card-title">Resort 1</h5>
-                            <div class="card-text d-flex flex-column gap-2 py-2">
-                                <span class="source">
-                                    Photo by <a
-                                        href="https://unsplash.com/@edvinjohansson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Edvin
-                                        Johansson</a> on <a
-                                        href="https://unsplash.com/s/photos/hotel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                                </span>
-                                <span>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                                <span>
-                                    <span class="labels">Free wifi</span>
-                                    <span class="labels">Breakfast</span>
-                                    <span class="labels">Buffet Dinner</span>
-                                </span>
-                                <span class="price">
-                                    &#8369; 2,599.00
-                                </span>
+                    <div class="col">
+                        <!-- hotel 4 -->
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1539284811665-fd56f8b1b47c?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=80"
+                                class="card-img-top" alt="hotel-3">
+                            <div class="card-body">
+                                <div class="card-text">
+
+
+
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span>
+                                        <span class="labels">Pool</span>
+                                        <span class="labels">Parking</span>
+                                        <span class="labels">Spa</span>
+                                    </span>
+                                    <span class="price">
+                                        &#8369; 3,279.00
+                                    </span>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="./hotel-3.html" class="btn btn-outline-secondary">Check Rooms</a>
+                                    </div>
+                                    <small class="text-muted"> <span class="source">
+                                            Photo by <a
+                                                href="https://unsplash.com/@danielcgold?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Dan
+                                                Gold</a> on <a
+                                                href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+                                        </span></small>
+                                </div>
                             </div>
-                            <a href="./resort-1.html" class="btn btn-primary">Check Rooms</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- hotel 5 -->
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1586611292717-f828b167408c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                                class="card-img-top" alt="hotel-5">
+                            <div class="card-body">
+                                <div class="card-text">
+
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span>
+                                        <span class="labels">Pool</span>
+                                        <span class="labels">Parking</span>
+                                        <span class="labels">Spa</span>
+                                    </span>
+                                    <span class="price">
+                                        &#8369; 3,279.00
+                                    </span>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="./hotel-3.html" class="btn btn-outline-secondary">Check Rooms</a>
+                                    </div>
+                                    <small class="text-muted"><span class="source">
+                                            Photo by <a
+                                                href="https://unsplash.com/@i_story_pictures?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yuliya
+                                                Pankevich</a> on <a
+                                                href="https://unsplash.com/s/photos/hotel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+                                        </span></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- hotel 6 -->
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1607570413857-d83fc84b4f64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                class="card-img-top" alt="hotel-6">
+                            <div class="card-body">
+                                <div class="card-text">
+
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span>
+                                        <span class="labels">Pool</span>
+                                        <span class="labels">Parking</span>
+                                        <span class="labels">Spa</span>
+                                    </span>
+                                    <span class="price">
+                                        &#8369; 3,279.00
+                                    </span>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="./hotel-3.html" class="btn btn-outline-secondary">Check Rooms</a>
+                                    </div>
+                                    <small class="text-muted"><span class="source">
+                                            Photo by <a
+                                                href="https://unsplash.com/@fernthephotographer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Fern
+                                                M. Lomibao</a> on <a
+                                                href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                        </span></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- hotel 7 -->
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1633291944374-dc6ae97a60da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                class="card-img-top" alt="hotel-7">
+                            <div class="card-body">
+                                <div class="card-text">
+
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span>
+                                        <span class="labels">Pool</span>
+                                        <span class="labels">Parking</span>
+                                        <span class="labels">Spa</span>
+                                    </span>
+                                    <span class="price">
+                                        &#8369; 3,279.00
+                                    </span>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="./hotel-3.html" class="btn btn-outline-secondary">Check Rooms</a>
+                                    </div>
+                                    <small class="text-muted"> <span class="source">
+                                            Photo by <a
+                                                href="https://unsplash.com/@florianmarette?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Florian
+                                                Marette</a> on <a
+                                                href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+                                        </span></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- resort 1 -->
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                class="card-img-top" alt="resort-1">
+                            <div class="card-body">
+                                <div class="card-text">
+
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span>
+                                        <span class="labels">Free wifi</span>
+                                        <span class="labels">Breakfast</span>
+                                        <span class="labels">Buffet Dinner</span>
+                                    </span>
+                                    <span class="price">
+                                        &#8369; 2,599.00
+                                    </span>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="./resort-1.html" class="btn btn-outline-secondary">Check Rooms</a>
+                                    </div>
+                                    <small class="text-muted"><span class="source">
+                                            Photo by <a
+                                                href="https://unsplash.com/@edvinjohansson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Edvin
+                                                Johansson</a> on <a
+                                                href="https://unsplash.com/s/photos/hotel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                        </span></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- resort 2 -->
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1609517448522-2e108986b505?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1074&amp;q=80"
+                                class="card-img-top" alt="resort-2">
+                            <div class="card-body">
+                                <div class="card-text">
+
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span>
+                                        <span class="labels">Pool</span>
+                                        <span class="labels">Parking</span>
+                                        <span class="labels">Spa</span>
+                                    </span>
+                                    <span class="price">
+                                        &#8369; 3,279.00
+                                    </span>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="./hotel-3.html" class="btn btn-primary">Check Rooms</a>
+                                    </div>
+                                    <small class="text-muted"><span class="source">
+                                            Photo by <a
+                                                href="https://unsplash.com/@chessacr?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Christian
+                                                Hess Araya</a> on <a
+                                                href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+                                        </span></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- resort 3 -->
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1506399790179-ddf35cdb2675?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1074&amp;q=80"
+                                class="card-img-top" alt="resort-3">
+                            <div class="card-body">
+                                <div class="card-text">
+
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span>
+                                        <span class="labels">Pool</span>
+                                        <span class="labels">Parking</span>
+                                        <span class="labels">Spa</span>
+                                    </span>
+                                    <span class="price">
+                                        &#8369; 3,279.00
+                                    </span>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="./hotel-3.html" class="btn btn-primary">Check Rooms</a>
+                                    </div>
+                                    <small class="text-muted"> <span class="source">
+                                            Photo by <a
+                                                href="https://unsplash.com/@thekokatron?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ko
+                                                Ko
+                                                Win</a> on <an
+                                                href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+                                                Unsplash</an>
+                                        </span></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- resort 4 -->
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1569369926169-9ee7fb80adeb?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1163&amp;q=80"
+                                class="card-img-top" alt="resort-4">
+                            <div class="card-body">
+                                <div class="card-text">
+
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span>
+                                        <span class="labels">Pool</span>
+                                        <span class="labels">Parking</span>
+                                        <span class="labels">Spa</span>
+                                    </span>
+                                    <span class="price">
+                                        &#8369; 3,279.00
+                                    </span>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="./hotel-3.html" class="btn btn-primary">Check Rooms</a>
+                                    </div>
+                                    <small class="text-muted"> <span class="source">
+                                            Photo by <a
+                                                href="https://unsplash.com/@simplysuzy?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Suzy
+                                                Brooks</a> on <a
+                                                href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+                                        </span></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- resort 5 -->
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1602281807778-ef209a1318d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                class="card-img-top" alt="resort-5">
+                            <div class="card-body">
+                                <div class="card-text">
+
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span>
+                                        <span class="labels">Pool</span>
+                                        <span class="labels">Parking</span>
+                                        <span class="labels">Spa</span>
+                                    </span>
+                                    <span class="price">
+                                        &#8369; 3,279.00
+                                    </span>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="./hotel-3.html" class="btn btn-primary">Check Rooms</a>
+                                    </div>
+                                    <small class="text-muted"> <span class="source">
+                                            Photo by <a
+                                                href="https://unsplash.com/@justdushawn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">dusan
+                                                jovic</a> on <a
+                                                href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                        </span></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- resort 6 -->
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1576504446184-d4ce8e6f2adf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80"
+                                class="card-img-top" alt="resort-6">
+                            <div class="card-body">
+                                <div class="card-text">
+
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span>
+                                        <span class="labels">Pool</span>
+                                        <span class="labels">Parking</span>
+                                        <span class="labels">Spa</span>
+                                    </span>
+                                    <span class="price">
+                                        &#8369; 3,279.00
+                                    </span>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="./hotel-3.html" class="btn btn-primary">Check Rooms</a>
+                                    </div>
+                                    <small class="text-muted"> <span class="source">
+                                            Photo by <a
+                                                href="https://unsplash.com/@joshuafuller?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Joshua
+                                                Fuller</a> on <a
+                                                href="https://unsplash.com/s/photos/hotels?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+                                        </span></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- resort 7 -->
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1589923158776-cb4485d99fd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                                class="card-img-top" alt="resort-7">
+                            <div class="card-body">
+                                <div class="card-text">
+
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span>
+                                        <span class="labels">Pool</span>
+                                        <span class="labels">Parking</span>
+                                        <span class="labels">Spa</span>
+                                    </span>
+                                    <span class="price">
+                                        &#8369; 3,279.00
+                                    </span>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="./hotel-3.html" class="btn btn-primary">Check Rooms</a>
+                                    </div>
+                                    <small class="text-muted"><span class="source">
+                                            Photo by <a
+                                                href="https://unsplash.com/@_christianlambert?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christian
+                                                Lambert</a> on <a
+                                                href="https://unsplash.com/s/photos/hotel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                        </span></small>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="container-fluid text-center">
+            <a href="#logo" class="btn btn-link"><i class="fa-solid fa-circle-up"></i> Return to top</a>
         </div>
     </main>
     <!-- footer -->
@@ -268,4 +683,5 @@
         </div>
     </footer>
 </body>
+
 </html>

@@ -50,7 +50,12 @@ html {
 
             .card {
                 .card-body {
+
                     .card-text {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
                         svg {
                             color: #d7942d;
                         }
@@ -58,6 +63,7 @@ html {
 
                     .price {
                         color: #d7942d;
+                        padding: 3px;
                     }
 
                     span.labels {
