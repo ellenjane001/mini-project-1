@@ -6,4 +6,7 @@ html body main nav + div.breadcrumb-wrapper ~ div.headline span.source {
 }
 html body main nav + div.breadcrumb-wrapper ~ div.headline span.source a {
   color: #FAF3E0;
+}
+html body main div.gallery img.img-fluid {
+  width: 850px !important;
 }/*# sourceMappingURL=bs1-hotel-global.css.map */
