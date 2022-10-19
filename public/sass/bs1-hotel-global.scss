@@ -1,0 +1,22 @@
+html {
+    body {
+        main {
+
+            nav+div.breadcrumb-wrapper {
+                &~div.headline {
+                    height: 600px;
+
+                    span.source {
+                        color: #FAF3E0;
+
+                        a {
+                            color: #FAF3E0;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+}

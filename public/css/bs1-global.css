@@ -31,6 +31,12 @@ html body main h1 {
   text-transform: uppercase;
   font-weight: 700;
 }
+html body main span.labels {
+  border: solid 0.01px;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 3px;
+}
 html body .card > img {
   height: 250px !important;
 }

@@ -57,6 +57,6 @@ html body main .results section div.def-wrapper span.price {
   padding: 3px;
   color: #fff;
 }
-html body main .results section div.def-wrapper button {
+html body main .results section div.def-wrapper a {
   align-self: flex-start;
 }/*# sourceMappingURL=bs1-search-res.css.map */

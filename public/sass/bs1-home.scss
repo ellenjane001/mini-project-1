@@ -49,6 +49,7 @@ html {
                     &>.col {
                         div.card {
                             height: 300px !important;
+                            background-size: cover;
                             background-blend-mode: overlay;
 
                             div {
@@ -75,44 +76,17 @@ html {
 
                         &:nth-child(1) {
                             div.card {
+                                background-blend-mode: normal;
 
-                                background-position: 10% 8%;
-                            }
+                                span.source {
+                                    color: #FAF3E0;
 
-                        }
-
-                        &:nth-child(2) {
-                            div.card {
-                                background-position: 10% 33%;
-                            }
-                        }
-
-                        &:nth-child(3) {
-                            div.card {
-                                background-position: 10% 48%;
+                                    a {
+                                        color: #FAF3E0;
+                                    }
+                                }
                             }
                         }
-
-                        &:nth-child(4) {
-                            div.card {
-                                background-position: 10% 48%;
-                            }
-                        }
-
-                        &:nth-child(5) {
-                            div.card {
-                                background-position: 60% 33%;
-                            }
-                        }
-
-                        &:nth-child(6) {
-                            div.card {
-                                background-position: 50% 75%;
-                            }
-                        }
-
-
-
                     }
                 }
             }

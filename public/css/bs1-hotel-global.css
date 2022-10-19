@@ -1,0 +1,9 @@
+html body main nav + div.breadcrumb-wrapper ~ div.headline {
+  height: 600px;
+}
+html body main nav + div.breadcrumb-wrapper ~ div.headline span.source {
+  color: #FAF3E0;
+}
+html body main nav + div.breadcrumb-wrapper ~ div.headline span.source a {
+  color: #FAF3E0;
+}/*# sourceMappingURL=bs1-hotel-global.css.map */
