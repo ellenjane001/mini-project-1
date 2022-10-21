@@ -1,0 +1,5 @@
+html body main nav + div.breadcrumb-wrapper ~ div.headline {
+  background: url("https://images.unsplash.com/photo-1614568112072-770f89361490?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+  background-size: cover;
+  background-position: 10% 65%;
+}/*# sourceMappingURL=bs1-hotel7.css.map */

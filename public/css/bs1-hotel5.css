@@ -1,0 +1,11 @@
+html body main nav + div.breadcrumb-wrapper ~ div.headline {
+  background: url("https://images.unsplash.com/photo-1586611292717-f828b167408c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+  background-size: cover;
+  background-position-y: 30%;
+}
+html body main nav + div.breadcrumb-wrapper ~ div.headline div > span.source {
+  color: #1E212D;
+}
+html body main nav + div.breadcrumb-wrapper ~ div.headline div > span.source a {
+  color: #1E212D;
+}/*# sourceMappingURL=bs1-hotel5.css.map */
