@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +22,6 @@
         </script>
     <script src="https://kit.fontawesome.com/b140af86b3.js" crossorigin="anonymous" defer></script>
 </head>
-
 <body>
     <!-- header -->
     <header class="d-flex justify-content-between px-3 align-content-center">
@@ -136,22 +134,8 @@
             </div>
         </div>
         <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 gallery">
-            <!-- room -->
-            <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                    alt="room" class="img-fluid">
-                <div class="my-3 p-3">
-                    <h2 class="display-5">Room</h2>
-                    <span class="source lead">
-                        Photo by <a
-                            href="https://unsplash.com/@markchamps21?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">mark
-                            champs</a> on <a
-                            href="https://unsplash.com/s/photos/hotel-room?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                    </span>
-                </div>
-            </div>
             <!-- pool -->
-            <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                 <div class="my-3">
                     <h2 class="display-5">Pool</h2>
                     <span class="source lead">
@@ -163,6 +147,50 @@
                 </div>
                 <img src="https://images.unsplash.com/photo-1529290130-4ca3753253ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"
                     alt="pool" class="img-fluid my-3 py-3">
+            </div>
+            <!-- room -->
+            <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                    alt="room" class="img-fluid">
+                <div class="my-3 p-3">
+                    <h2 class="display-5">Standard Room</h2>
+                    <span class="source lead">
+                        Photo by <a
+                            href="https://unsplash.com/@markchamps21?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">mark
+                            champs</a> on <a
+                            href="https://unsplash.com/s/photos/hotel-room?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 gallery">
+            <!-- room -->
+            <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1549638441-b787d2e11f14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="room" class="img-fluid">
+                <div class="my-3 p-3">
+                    <h2 class="display-5">Double Room</h2>
+                    <span class="source lead">
+                        Photo by <a
+                            href="https://unsplash.com/@andrewtneel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrew
+                            Neel</a> on <a
+                            href="https://unsplash.com/s/photos/double-room?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </span>
+                </div>
+            </div>
+            <!-- room -->
+            <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3">
+                    <h2 class="display-5">Twin Room</h2>
+                    <span class="source lead">
+                        Photo by <a
+                            href="https://unsplash.com/@ly0ns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Li
+                            Yang</a> on <a
+                            href="https://unsplash.com/s/photos/standard-hotel-room?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </span>
+                </div>
+                <img src="https://images.unsplash.com/photo-1648383228240-6ed939727ad6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                    alt="twin" class="img-fluid my-3 py-3">
             </div>
         </div>
         <!-- modal -->
@@ -176,24 +204,23 @@
                     <div class="modal-body">
                         <form class="d-flex flex-column gap-2">
                             <div class="form-floating">
-
                                 <select class="form-select" id="rooms">
                                     <option value="">Standard</option>
+                                    <option value="">Double</option>
+                                    <option value="">Twin</option>
+                                    <option value="">Suite</option>
+                                    <option value="">Deluxe</option>
                                 </select>
                                 <label for="rooms">Rooms</label>
-
                             </div>
                             <div class="form-floating">
-
                                 <select class="form-select" id="amenities">
                                     <option value="">Breakfast</option>
                                     <option value="">Spa</option>
                                     <option value="">Extra Towel</option>
                                 </select>
                                 <label for="amenities">Additional Amenities</label>
-
                             </div>
-
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -216,5 +243,4 @@
         </div>
     </footer>
 </body>
-
 </html>

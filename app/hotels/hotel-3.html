@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +22,6 @@
         </script>
     <script src="https://kit.fontawesome.com/b140af86b3.js" crossorigin="anonymous" defer></script>
 </head>
-
 <body>
     <header class="d-flex justify-content-between px-3 align-content-center">
         <img src="https://api.logo.com/api/v2/images?format=webp&logo=logo_9c8e936e-16fb-477f-ac78-2e18cc137548&width=2000&quality=100&background=transparent&fit=contain&u=1664523436"
@@ -162,7 +160,6 @@
                 </div>
                 <img src="https://images.unsplash.com/photo-1570213489059-0aac6626cade?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                     alt="pool" class="img-fluid my-3 py-3">
-
             </div>
         </div>
         <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 gallery">
@@ -193,7 +190,6 @@
                 </div>
                 <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                     alt="pool" class="img-fluid my-3 py-3">
-
             </div>
         </div>
         <!-- modal -->
@@ -201,19 +197,29 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Book Hotel 3</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form class="d-flex flex-column gap-2">
                             <div class="form-floating">
-
                                 <select class="form-select" id="rooms">
                                     <option value="">Standard</option>
+                                    <option value="">Double</option>
+                                    <option value="">Twin</option>
+                                    <option value="">Suite</option>
+                                    <option value="">Deluxe</option>
                                 </select>
                                 <label for="rooms">Rooms</label>
                             </div>
-
+                            <div class="form-floating">
+                                <select class="form-select" id="amenities">
+                                    <option value="">Breakfast</option>
+                                    <option value="">Spa</option>
+                                    <option value="">Extra Towel</option>
+                                </select>
+                                <label for="amenities">Additional Amenities</label>
+                            </div>
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -223,7 +229,6 @@
                 </div>
             </div>
         </div>
-
     </main>
     <!-- footer template -->
     <footer class="d-flex container-fluid border-top p-3 flex-column justify-content-center align-items-center">
@@ -237,5 +242,4 @@
         </div>
     </footer>
 </body>
-
 </html>
