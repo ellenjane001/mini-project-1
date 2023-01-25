@@ -26,6 +26,11 @@ html body header .c-wrapper {
     flex-direction: row;
   }
 }
+html body main #nav-logo {
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 html body main h1 {
   font-family: "Comfortaa", cursive;
   text-transform: uppercase;

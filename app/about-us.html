@@ -25,27 +25,15 @@
 </head>
 
 <body>
-    <!-- header -->
-    <header class="d-flex justify-content-between px-3 align-content-center">
-        <img src="https://api.logo.com/api/v2/images?format=webp&logo=logo_9c8e936e-16fb-477f-ac78-2e18cc137548&width=2000&quality=100&background=transparent&fit=contain&u=1664523436"
-            alt="" class="p-2 img-fluid">
-        <div class="c-wrapper d-flex justify-content-between">
-            <div class="email d-flex align-items-center px-2">
-                <h6 class="text-muted"><i class="fa-solid fa-envelope"></i> <span>:</span> email@habitat-finders.com
-                </h6>
-            </div>
-            <div class="p-number d-flex align-items-center px-2">
-                <h6 class="text-muted"><i class="fa-solid fa-phone"></i>
-                    <span>:</span> +(63)48-433-3111
-                </h6>
-            </div>
-        </div>
-    </header>
     <!-- main -->
     <main>
         <!-- navigation -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://api.logo.com/api/v2/images?format=webp&logo=logo_9c8e936e-16fb-477f-ac78-2e18cc137548&width=2000&quality=100&background=transparent&fit=contain&u=1664523436"
+                   alt="logo" id="nav-logo" class="p-2 img-fluid">
+               </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -80,72 +68,142 @@
                 <h4>Ratings and Reviews</h4>
             </di>
             <div class="container-fluid d-flex flex-column align-items-center p-4 position-relative">
-                <div class="overlay">
+                <div class="row">
+                    <div class="col">
+                        <!-- rating 1 -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://images.unsplash.com/photo-1437719417032-8595fd9e9dc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                                class="card-img-top" alt="beach-image">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    (5.0)
+                                </h5>
+                                <div class="card-text">
+                                    <blockquote class="blockquote">
+                                        <p>User friendly website! Easy to find a comfortable resort for my summer
+                                            vacation.</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer">
+                                        Baby Boomer from <cite title="Source Title">Planet X</cite>
+                                    </figcaption>
+                                    
+                                </div>
+                                <span class="source">
+                                    Photo by <a
+                                        href="https://unsplash.com/@seb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sébastien
+                                        Jermer</a> on <a
+                                        href="https://unsplash.com/images/nature/beach?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- rating 2 -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                class="card-img-top" alt="beach-image">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    (5.0)
+                                </h5>
+                                <div class="card-text">
+                                    <blockquote class="blockquote">
+                                        <p>Found the cheapest hotel in just a few clicks. Superb!</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer">
+                                        Anonymous Traveler from <cite title="Source Title">Palawan</cite>
+                                    </figcaption>
+                                    
+                                </div>
+                                <span class="source">
+                                    Photo by <a
+                                        href="https://unsplash.com/@micheile?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">micheile
+                                        dot com</a> on <a
+                                        href="https://unsplash.com/images/things/money?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- rating 3 -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://images.unsplash.com/photo-1553369728-15ec6971afaf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                class="card-img-top" alt="beach-image">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    (5.0)
+                                </h5>
+                                <div class="card-text">
+                                    <blockquote class="blockquote">
+                                        <p>1000000/10! Will book again! Shout out to Hotel XXX's frontdesk! Thank you
+                                            for your wonderful
+                                            service.</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer">
+                                        Social Media influencer from <cite title="Source Title">Cebu</cite>
+                                    </figcaption>
+                                    
+                                </div>
+                                <span class="source">
+                                    Photo by <a
+                                        href="https://unsplash.com/@wildlittlethingsphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Helena
+                                        Lopes</a> on <a
+                                        href="https://unsplash.com/photos/QpjyqYy5R-U?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- rating 4 -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                class="card-img-top" alt="beach-image">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    (5.0)
+                                </h5>
+                                <div class="card-text">
+                                    <blockquote class="blockquote">
+                                        <p>Nice discounts! I booked a two-week vacation in Boracay, I only spent a few thousands,
+                                            compared to Website X.</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer">
+                                        Backpacker from <cite title="Source Title">Manila</cite>
+                                    </figcaption>
+                                   
+                                </div>
+                                <span class="source">
+                                    Photo by <a href="https://unsplash.com/@johnschno?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">John Schnobrich</a> on <a href="https://unsplash.com/photos/2FPjlAyMQTA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- rating 1 -->
-                <figure class="align-self-start border border-opacity-10">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <blockquote class="blockquote">
-                        <p>User friendly website! Easy to find a comfortable resort for my summer vacation.</p>
-                    </blockquote>
-                    <figcaption class="blockquote-footer">
-                        Baby Boomer from <cite title="Source Title">Planet X</cite>
-                    </figcaption>
-                </figure>
-                <!-- rating 2 -->
-                <figure class="border border-opacity-10">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <blockquote class="blockquote">
-                        <p>Found the cheapest hotel in just a few clicks. Superb!</p>
-                    </blockquote>
-                    <figcaption class="blockquote-footer">
-                        Anonymous Traveler from <cite title="Source Title">Palawan</cite>
-                    </figcaption>
-                </figure>
-                <!-- rating 3 -->
-                <figure class="align-self-end border border-opacity-10">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <blockquote class="blockquote">
-                        <p>1000000/10! Will book again! Shout out to Hotel XXX's frontdesk! Thank you for your wonderful
-                            service.</p>
-                    </blockquote>
-                    <figcaption class="blockquote-footer">
-                        Social Media influencer from <cite title="Source Title">Cebu</cite>
-                    </figcaption>
-                </figure>
-                <!-- rating 4 -->
-                <figure class="align-self-start border border-opacity-10">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <blockquote class="blockquote">
-                        <p>Nice discounts! I booked a two-week vacation in Boracay, I only spent a few thousands,
-                            compared to Website X.</p>
-                    </blockquote>
-                    <figcaption class="blockquote-footer">
-                        Backpacker from <cite title="Source Title">Manila</cite>
-                    </figcaption>
-                </figure>
-                <span class="source">
-                    Photo by <a
-                        href="https://unsplash.com/@geeramr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">GERARDO
-                        MR</a> on <a
-                        href="https://unsplash.com/s/photos/resort?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                </span>
+
+               
             </div>
         </div>
 

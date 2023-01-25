@@ -27,9 +27,14 @@
                         flex-direction: row;
                     }
                 }
+
             }
 
             main {
+                #nav-logo{
+                    height: 100px;
+                    object-fit: contain;
+                }
                 h1 {
                     font-family: 'Comfortaa', cursive;
                     text-transform: uppercase;
