@@ -31,7 +31,7 @@
             }
 
             main {
-                #nav-logo{
+                #logo{
                     height: 100px;
                     object-fit: contain;
                 }
@@ -68,6 +68,12 @@
             footer {
                 background-color: #3A424C;
                 color: #FAF3E0;
+                .icons a{
+                    color:#FAF3E0;
+                }
+                .icons a:hover{
+                    color:var(--bs-primary);
+                }
             }
         }
     }
